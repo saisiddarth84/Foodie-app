@@ -1,71 +1,32 @@
-const heading = React.createElement(
-    "h1",
-    {id: "heading", xyz: 'abc'}, 
-    "Hello World from React!"
-);
-// React element is an object
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-console.log(heading); // {...} React element / object
+const parent = React.createElement("div",{ id: 'parent' },[
+  React.createElement("div", { id: 'child' }, [
+    React.createElement("h1", {}, "I'm an h1 tag"),
+    React.createElement("h2", {}, "Welcome into hello world")
+  ]),
+  React.createElement("div", { id: 'child' }, [
+    React.createElement("h1", {}, "I'm an h1 tag"),
+    React.createElement("h2", {}, "I'm an h2 tag")
+  ])
+]);
+
+console.log(parent); // object
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(heading); // it takes object and convert that object into h1 tag that browser understands and put it inside root element
-
-
-// The costliest thing / operation a browser will do is whenever we want change / manipulate the nodes(adding/removing the nodes) using DOM
-// All these library and frameworks comes with a philosophy to optimize these costly operation
-// React also comes with same philosophy that whenvere you want to interact with the web page do it using React(JavaScript) and that is why React gives helper functions to achive this 
-
-// createElement takes  3 args - type of tag, props(object), children 
-
-// props - children + attributes
-
-
-// Nested html and passing more than one chidren or siblings
-
-
-/**
- * <div id="parent">
- *      <div id="child">
- *          <h1>I'm an h1 tag</h1>
- *          <h2>I'm an h2 tag</h2>
- *      </div>
- * </div>
- * 
- */
-const parent = React.createElement(
-    "div",
-    {id:'parent'},
-    [React.createElement(
-        "div", {id:'child'},[
-        React.createElement("h1", {}, "I'm an h1 tag"),
-        React.createElement("h2", {}, "I'm an h2 tag")
-    ]),
-    React.createElement(
-        "div", {id:'child'},[
-        React.createElement("h1", {}, "I'm an h1 tag"),
-        React.createElement("h2", {}, "I'm an h2 tag")
-    ])
-]);
-//NOTE: If we have to pass more than one children in 3rd argument then we have pass the multiple childrens in  a array 
-
-
-
 root.render(parent);
 
-// NOTE: ReactElement (Object) => HTML (Browser Understoods)
+// Enabling Hot Module replacement
+if(module.hot){
+  module.hot.accept();
+}
 
-// While it rendering into the DOM it converts itself into the HTML and put itself into the DOM
+// Why Parcel?
 
-// render method replace whatever there inside the root  with we pass the react element
-
-console.log(parent)
-
-
-// React is some small javascript library
-
-// React - is a js library which can be worked in some small portion/section(header,footer) our web page/ app to optimize
-
-// Frameworks - requires you to create whole app/ web page using that framework
-
-// BUT React can work in your existing application/ small piece of page
+// Parcel is a bundler that simplifies the process of working with modern web applications by automatically managing dependencies and optimizing assets.
+// It's particularly useful for React projects because browsers can't directly understand Node.js modules.
+// When we import React from a Node module and try to run it on the server-side, the server doesn't understand what React is because it's meant for client-side/browser execution.
+// Parcel resolves this by bundling all JavaScript code, including React and its dependencies, and generates its own JavaScript and CSS files in a dist (distribution) folder.
+// These files are optimized and ready for the browser to interpret, enabling us to use React and other modern JavaScript features seamlessly in our web applications.
