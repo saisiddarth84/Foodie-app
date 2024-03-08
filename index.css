@@ -1,7 +1,92 @@
-#heading{
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-#country{
-    width: 500px;
+.app{
+    margin: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  padding-block-start: 10px;
+
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+}
+
+.logo-container {
+  cursor: pointer;
+}
+
+.logo {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  object-position: left bottom;
+}
+
+.nav-items > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cart-image {
+  width: 40px;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.res-card{
+    width: 20%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition:transform 0.4s;
+}
+
+.res-card:hover{
+    transform: scale(1.05);
+    border: 1px solid black;
+
+}
+
+.res-logo{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+ 
+
+}
+
+.res-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.search{
+   padding: 10px; 
+   margin-block: 20px;
+
 }
