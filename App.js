@@ -29,28 +29,37 @@ console.log(resData)
 const RestaurantCard = (props) => {
   const {resData} = props;
 
+  const {
+    name,
+    cuisines,
+    avgRating,
+    costForTwo,
+    cloudinaryImageId,
+    sla 
+   } = resData
+
+  const {deliveryTime} = sla;
+
   return (
     <div className="res-card" style={{backgroundColor : "#f0f0f0"}}>
       <img
        className="res-logo"
        alt="res-logo"
-       src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.cloudinaryImageId}
+       src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}
       />
      
       <div className="res-details">
-        <h3>{resData.name}</h3>
-        <h5>{resData.cuisines.join(', ')}</h5>
-        <h4>{resData.avgRating + ' Rating'}</h4>
-        <h4>{resData.costForTwo}</h4>
-        <h5>{resData.sla.deliveryTime + ' minutes'}</h5>
+        <h2>{name}</h2>
+        <p>{cuisines.join(', ')}</p>
+        <h4>{avgRating + ' Rating'}</h4>
+        <h4>{costForTwo}</h4>
+        <h5>{deliveryTime + ' minutes'}</h5>
       </div>
 
     </div>
   )
 }
-
-const URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667#";
-
+// not using keys(not acceptable) <<<<< index as key <<<<<<<<<<<<< unique id (best practice)
 
 const Body = () => {
   return (
@@ -60,27 +69,15 @@ const Body = () => {
         <button style={{padding: '4px 10px'}}>Search</button>
       </div>
       <div className="res-container">
-        {resData.map(data => {
-          return (
-            <RestaurantCard
-              resData={data.info}
-            />
-          )
-        })}
-        {resData.map(data => {
-          return (
-            <RestaurantCard
-              resData = {data.info}
-            />
-          )
-        })}
-        {resData.map(data => {
-          return (
-            <RestaurantCard
-              resData ={data.info}
-            />
-          )
-        })}
+        {resData.map(restaurant => 
+            <RestaurantCard key={restaurant.info.id} resData={restaurant.info}/> 
+        )}
+        {resData.map(restaurant => 
+            <RestaurantCard  key={restaurant.info.id}  resData={restaurant.info} />  
+        )}
+        {resData.map(restaurant => 
+            <RestaurantCard  key={restaurant.info.id}  resData ={restaurant.info} />
+        )}
       </div>
     </div>
   )
@@ -121,4 +118,5 @@ const AppLayout = () => {
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<AppLayout />); // Rendering a Component
+
 
