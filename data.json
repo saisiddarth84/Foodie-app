@@ -10,35 +10,208 @@
         "infoWithStyle": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.FavouriteRestaurantInfoWithStyle",
           "restaurants": [
+            
             {
               "info": {
-                "id": "47385",
-                "name": "Priyadarshini Grand",
-                "cloudinaryImageId": "c9elzh8awx7jcx70cood",
-                "locality": "Basaveshwara Nagar",
-                "areaName": "Basaveshwara Nagar",
-                "costForTwo": "₹200 for two",
+                "id": "6926",
+                "name": "FreshMenu",
+                "cloudinaryImageId": "6c4de7b481d3614370e5062b2f33e7d6",
+                "locality": "Dr. Rajkumar road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹250 for two",
                 "cuisines": [
-                  "South Indian",
-                  "North Indian",
-                  "Chaat",
+                  "Continental",
                   "Chinese",
-                  "Beverages"
+                  "Oriental",
+                  "Asian",
+                  "Healthy Food",
+                  "Fast Food",
+                  "Indian",
+                  "Desserts"
                 ],
-                "avgRating": 4.6,
-                "parentId": "9727",
-                "avgRatingString": "4.6",
+                "avgRating": 4,
+                "parentId": "398",
+                "avgRatingString": "4.0",
                 "totalRatingsString": "10K+",
                 "sla": {
-                  "deliveryTime": 31,
-                  "lastMileTravel": 5,
+                  "deliveryTime": 45,
+                  "lastMileTravel": 5.6,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-50 mins",
+                  "lastMileTravelString": "5.6 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 01:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "EVERY ITEM",
+                  "subHeader": "@ ₹139"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/freshmenu-dr-rajkumar-road-rajajinagar-bangalore-6926",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "425931",
+                "name": "Aliyans Cafe",
+                "cloudinaryImageId": "oak8kcztgjwgqfe5zys2",
+                "locality": "Prashanth Nagar",
+                "areaName": "Jalahalli Peenya",
+                "costForTwo": "₹250 for two",
+                "cuisines": ["Indian"],
+                "avgRating": 4.2,
+                "parentId": "237013",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 34,
+                  "lastMileTravel": 4.6,
                   "serviceability": "SERVICEABLE",
                   "slaString": "30-35 mins",
-                  "lastMileTravelString": "5.0 km",
+                  "lastMileTravelString": "4.6 km",
                   "iconType": "ICON_TYPE_EMPTY"
                 },
                 "availability": {
                   "nextCloseTime": "2024-03-08 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹45 OFF",
+                  "subHeader": "ABOVE ₹225",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/aliyans-cafe-prashanth-nagar-jalahalli-peenya-bangalore-425931",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "110506",
+                "name": "Nammura Upachara",
+                "cloudinaryImageId": "vgh0d1sn9whx77ry8i2i",
+                "locality": "West Of Chord Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹300 for two",
+                "cuisines": ["South Indian", "Chinese", "North Indian"],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "143726",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 27,
+                  "lastMileTravel": 4.3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "25-30 mins",
+                  "lastMileTravelString": "4.3 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 22:30:00",
                   "opened": true
                 },
                 "badges": {
@@ -67,6 +240,11 @@
                     "textExtendedBadges": {}
                   }
                 },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹50 OFF",
+                  "subHeader": "ABOVE ₹250",
+                  "discountTag": "GET"
+                },
                 "loyaltyDiscoverPresentationInfo": {
                   "logoCtx": {
                     "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
@@ -93,10 +271,10 @@
                 "restaurantOfferPresentationInfo": {}
               },
               "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
               },
               "cta": {
-                "link": "https://www.swiggy.com/restaurants/priyadarshini-grand-basaveshwara-nagar-bangalore-47385",
+                "link": "https://www.swiggy.com/restaurants/nammura-upachara-west-of-chord-road-rajajinagar-bangalore-110506",
                 "text": "RESTAURANT_MENU",
                 "type": "WEBLINK"
               },
@@ -104,24 +282,504 @@
             },
             {
               "info": {
-                "id": "131606",
-                "name": "McDonald's",
-                "cloudinaryImageId": "f62564e14944753903849c4ef673af4d",
-                "locality": "2nd stage",
-                "areaName": "Peenya",
-                "costForTwo": "₹400 for two",
+                "id": "728908",
+                "name": "Sri Krishna Vaibhava",
+                "cloudinaryImageId": "b573f6a00571c79f8d92ff855351dc01",
+                "locality": "Rajajinagara",
+                "areaName": "Basaveshwaranagar",
+                "costForTwo": "₹250 for two",
                 "cuisines": [
-                  "Burgers",
+                  "South Indian",
+                  "Chinese",
+                  "North Indian",
+                  "Chaat",
                   "Beverages",
-                  "Cafe",
+                  "Ice Cream",
                   "Desserts"
                 ],
                 "avgRating": 4.4,
-                "parentId": "630",
+                "veg": true,
+                "parentId": "433289",
                 "avgRatingString": "4.4",
+                "totalRatingsString": "50+",
+                "sla": {
+                  "deliveryTime": 33,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹45 OFF",
+                  "subHeader": "ABOVE ₹300",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/sri-krishna-vaibhava-rajajinagara-basaveshwaranagar-bangalore-728908",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "476362",
+                "name": "Gowdru Biriyani Mane",
+                "cloudinaryImageId": "vzpaxotltxdgcp3gsxkj",
+                "locality": "Bagalagunte",
+                "areaName": "Jalahalli",
+                "costForTwo": "₹300 for two",
+                "cuisines": ["Biryani"],
+                "avgRating": 3.6,
+                "parentId": "285984",
+                "avgRatingString": "3.6",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 32,
+                  "lastMileTravel": 5.9,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.9 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹999",
+                  "discountTag": "FLAT DEAL"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/gowdru-biriyani-mane-bagalagunte-jalahalli-bangalore-476362",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "728334",
+                "name": "Kwality Walls Frozen Dessert and Ice Cream Shop",
+                "cloudinaryImageId": "909daf097e30cd01d8fd121ddc6de2f6",
+                "locality": "annapurneshwari nagar",
+                "areaName": "Basaveshwaranagar",
+                "costForTwo": "₹200 for two",
+                "cuisines": ["Desserts", "Ice Cream", "Ice Cream Cakes"],
+                "avgRating": 4.4,
+                "veg": true,
+                "parentId": "582",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "50+",
+                "sla": {
+                  "deliveryTime": 27,
+                  "lastMileTravel": 3.8,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "25-30 mins",
+                  "lastMileTravelString": "3.8 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:59:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹80 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-annapurneshwari-nagar-basaveshwaranagar-bangalore-728334",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "288893",
+                "name": "Meghana Foods",
+                "cloudinaryImageId": "slheenytwb3iaypqf4yd",
+                "locality": "Dr. Rajkumar Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹500 for two",
+                "cuisines": [
+                  "Biryani",
+                  "Andhra",
+                  "South Indian",
+                  "Chinese",
+                  "Seafood"
+                ],
+                "avgRating": 4.5,
+                "parentId": "635",
+                "avgRatingString": "4.5",
                 "totalRatingsString": "10K+",
                 "sla": {
-                  "deliveryTime": 29,
+                  "deliveryTime": 31,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 01:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹50 OFF",
+                  "subHeader": "ABOVE ₹199",
+                  "headerTypeV2": "HEADER_TYPE_V2_TOP_UP",
+                  "secondaryDiscountCallout": "+ EXTRA ₹50 OFF"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/meghana-foods-dr-rajkumar-road-rajajinagar-bangalore-288893",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "405105",
+                "name": "Leon's - Burgers & Wings (Leon Grill)",
+                "cloudinaryImageId": "b2edbc28b7b8219d6e0a9c049ce06658",
+                "locality": "West of Chord Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                  "American",
+                  "Snacks",
+                  "Turkish",
+                  "Portuguese",
+                  "Continental"
+                ],
+                "avgRating": 4.3,
+                "parentId": "371281",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "5K+",
+                "sla": {
+                  "deliveryTime": 30,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 04:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹125 OFF",
+                  "subHeader": "ABOVE ₹249",
+                  "discountTag": "FLAT DEAL"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/leons-burgers-and-wings-leon-grill-west-of-chord-road-rajajinagar-bangalore-405105",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "18975",
+                "name": "Nandhana Palace",
+                "cloudinaryImageId": "195876a3181ef63f76e45e3a7b49b585",
+                "locality": "Rajajinagar",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹500 for two",
+                "cuisines": [
+                  "Biryani",
+                  "Andhra",
+                  "South Indian",
+                  "North Indian"
+                ],
+                "avgRating": 4.3,
+                "parentId": "2120",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "10K+",
+                "sla": {
+                  "deliveryTime": 36,
+                  "lastMileTravel": 5.7,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "5.7 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 01:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹125 OFF",
+                  "subHeader": "ABOVE ₹199",
+                  "headerTypeV2": "HEADER_TYPE_V2_TOP_UP",
+                  "secondaryDiscountCallout": "+ EXTRA ₹50 OFF"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/nandhana-palace-rajajinagar-bangalore-18975",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "38206",
+                "name": "KFC",
+                "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
+                "locality": "Vaishnavi Sapphire",
+                "areaName": "Yeshwantpur",
+                "costForTwo": "₹400 for two",
+                "cuisines": [
+                  "Burgers",
+                  "Biryani",
+                  "American",
+                  "Snacks",
+                  "Fast Food"
+                ],
+                "avgRating": 4.1,
+                "parentId": "547",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 26,
                   "lastMileTravel": 2.9,
                   "serviceability": "SERVICEABLE",
                   "slaString": "25-30 mins",
@@ -129,7 +787,329 @@
                   "iconType": "ICON_TYPE_EMPTY"
                 },
                 "availability": {
-                  "nextCloseTime": "2024-03-09 01:45:00",
+                  "nextCloseTime": "2024-03-09 01:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹80 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/kfc-vaishnavi-sapphire-yeshwantpur-bangalore-38206",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "487868",
+                "name": "Chinese Wok",
+                "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+                "locality": "HBCS Layout",
+                "areaName": "Basaveshwara Nagar",
+                "costForTwo": "₹250 for two",
+                "cuisines": ["Chinese", "Asian", "Tibetan", "Desserts"],
+                "avgRating": 4.3,
+                "parentId": "61955",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 28,
+                  "lastMileTravel": 4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "25-30 mins",
+                  "lastMileTravelString": "4.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 02:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹120 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/chinese-wok-hbcs-layout-basaveshwara-nagar-bangalore-487868",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "491104",
+                "name": "Theobroma",
+                "cloudinaryImageId": "63dd75492c47fcec191132b8eb299ea5",
+                "locality": "Orion Mall",
+                "areaName": "Malleshwaram",
+                "costForTwo": "₹400 for two",
+                "cuisines": ["Bakery", "Desserts", "Beverages"],
+                "avgRating": 4.6,
+                "parentId": "1040",
+                "avgRatingString": "4.6",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 37,
+                  "lastMileTravel": 4.8,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "4.8 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 22:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "newg.png",
+                      "description": "Gourmet"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "Gourmet",
+                            "imageId": "newg.png"
+                          }
+                        }
+                      ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "20% OFF",
+                  "discountTag": "MIN"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/theobroma-orion-mall-malleshwaram-bangalore-491104",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "63300",
+                "name": "Hotel Empire",
+                "cloudinaryImageId": "ervram6kki8b97it2ulr",
+                "locality": "West Of Chord Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹400 for two",
+                "cuisines": ["North Indian", "Kebabs", "Biryani"],
+                "avgRating": 4.2,
+                "parentId": "475",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "10K+",
+                "sla": {
+                  "deliveryTime": 35,
+                  "lastMileTravel": 4.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 03:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹40 OFF",
+                  "subHeader": "ABOVE ₹400",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/hotel-empire-west-of-chord-road-rajajinagar-bangalore-63300",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "41924",
+                "name": "California Burrito",
+                "cloudinaryImageId": "hhhmqpgnmvow7iyzlsdc",
+                "locality": "Malleshwaram",
+                "areaName": "Malleshwaram",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                  "Mexican",
+                  "American",
+                  "Salads",
+                  "Continental",
+                  "Keto",
+                  "Healthy Food"
+                ],
+                "avgRating": 4.6,
+                "parentId": "1252",
+                "avgRatingString": "4.6",
+                "totalRatingsString": "10K+",
+                "sla": {
+                  "deliveryTime": 40,
+                  "lastMileTravel": 4.8,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "4.8 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:00:00",
                   "opened": true
                 },
                 "badges": {
@@ -187,10 +1167,87 @@
                 "restaurantOfferPresentationInfo": {}
               },
               "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
               },
               "cta": {
-                "link": "https://www.swiggy.com/restaurants/mcdonalds-2nd-stage-peenya-bangalore-131606",
+                "link": "https://www.swiggy.com/restaurants/california-burrito-malleshwaram-bangalore-41924",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+
+            {
+              "info": {
+                "id": "777980",
+                "name": "Beijing Bites",
+                "cloudinaryImageId": "ca0eb08d0635fd6da2e5a480fec897d0",
+                "locality": "Chord Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹450 for two",
+                "cuisines": ["Chinese", "Thai"],
+                "avgRating": 4.2,
+                "parentId": "103",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "100+",
+                "sla": {
+                  "deliveryTime": 30,
+                  "lastMileTravel": 4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 00:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "isNewlyOnboarded": true,
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/beijing-bites-chord-road-rajajinagar-bangalore-777980",
                 "text": "RESTAURANT_MENU",
                 "type": "WEBLINK"
               },
@@ -198,25 +1255,604 @@
             },
             {
               "info": {
-                "id": "272241",
-                "name": "EatFit",
-                "cloudinaryImageId": "a564ace38895abd960157ac2a76aaf2a",
+                "id": "24886",
+                "name": "Oven Story Pizza - Standout Toppings",
+                "cloudinaryImageId": "b39e4312ae2e9f65c3b58faaed83f488",
+                "locality": "14th Main Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹400 for two",
+                "cuisines": [
+                  "Pizzas",
+                  "Pastas",
+                  "Italian",
+                  "Desserts",
+                  "Beverages"
+                ],
+                "avgRating": 4.5,
+                "parentId": "3534",
+                "avgRatingString": "4.5",
+                "totalRatingsString": "5K+",
+                "sla": {
+                  "deliveryTime": 25,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "20-30 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:59:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹110 OFF",
+                  "subHeader": "ABOVE ₹185",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/oven-story-pizza-standout-toppings-14th-main-road-rajajinagar-bangalore-24886",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "49828",
+                "name": "Ibaco",
+                "cloudinaryImageId": "oqjvyd562cpqjrfasxyw",
+                "locality": "Mahalakshmipuram",
+                "areaName": "Mahalaxmi Puram",
+                "costForTwo": "₹800 for two",
+                "cuisines": ["Desserts"],
+                "avgRating": 4.7,
+                "veg": true,
+                "parentId": "3481",
+                "avgRatingString": "4.7",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 24,
+                  "lastMileTravel": 3.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "20-25 mins",
+                  "lastMileTravelString": "3.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "newg.png",
+                      "description": "Gourmet"
+                    },
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "Gourmet",
+                            "imageId": "newg.png"
+                          }
+                        },
+                        {
+                          "attributes": {
+                            "description": "pureveg",
+                            "imageId": "v1695133679/badges/Pure_Veg111.png"
+                          }
+                        }
+                      ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/ibaco-mahalakshmipuram-mahalaxmi-puram-bangalore-49828",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "304284",
+                "name": "Cafe Coffee Day",
+                "cloudinaryImageId": "b70c7d23d197251b7b315b7e4d8173ae",
+                "locality": "2nd Stage",
+                "areaName": "Peenya",
+                "costForTwo": "₹400 for two",
+                "cuisines": [
+                  "Beverages",
+                  "Cafe",
+                  "Snacks",
+                  "Desserts",
+                  "Burgers",
+                  "Ice Cream",
+                  "Bakery",
+                  "Fast Food"
+                ],
+                "avgRating": 4.2,
+                "parentId": "1",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "500+",
+                "sla": {
+                  "deliveryTime": 26,
+                  "lastMileTravel": 2.9,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "25-30 mins",
+                  "lastMileTravelString": "2.9 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/cafe-coffee-day-2nd-stage-peenya-bangalore-304284",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "223179",
+                "name": "The Biryani Life",
+                "cloudinaryImageId": "aslugwmm22rabkahwurv",
+                "locality": "3rd Stage",
+                "areaName": "Basaveshwar Nagar",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                  "Biryani",
+                  "Mughlai",
+                  "Lucknowi",
+                  "Hyderabadi",
+                  "Kebabs",
+                  "Desserts",
+                  "Beverages"
+                ],
+                "avgRating": 3.9,
+                "parentId": "8496",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 39,
+                  "lastMileTravel": 4.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "4.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:59:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/the-biryani-life-3rd-stage-basaveshwar-nagar-bangalore-223179",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "255789",
+                "name": "Great Indian Khichdi by EatFit",
+                "cloudinaryImageId": "6e44fd7f1e5cd9967edfe47c10247671",
                 "locality": "1st Block",
                 "areaName": "Rajajinagar",
-                "costForTwo": "₹270 for two",
+                "costForTwo": "₹200 for two",
                 "cuisines": [
-                  "Chinese",
-                  "Healthy Food",
-                  "Tandoor",
-                  "Pizzas",
+                  "Home Food",
+                  "Indian",
                   "North Indian",
-                  "Thalis",
-                  "Biryani"
+                  "Healthy Food",
+                  "Snacks",
+                  "Desserts",
+                  "Rajasthani",
+                  "South Indian",
+                  "Maharashtrian",
+                  "Sweets"
                 ],
-                "avgRating": 4.4,
-                "parentId": "76139",
-                "avgRatingString": "4.4",
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "319582",
+                "avgRatingString": "4.3",
                 "totalRatingsString": "5K+",
+                "sla": {
+                  "deliveryTime": 33,
+                  "lastMileTravel": 4.8,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.8 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:59:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ],
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "brand",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "pureveg",
+                            "imageId": "v1695133679/badges/Pure_Veg111.png"
+                          }
+                        }
+                      ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "brand"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/great-indian-khichdi-by-eatfit-1st-block-rajajinagar-bangalore-255789",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "352159",
+                "name": "Rolls On Wheels - Shawarma & Wraps",
+                "cloudinaryImageId": "e3493cc67c8215a1a18ba31822184fe3",
+                "locality": "1st Block",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                  "Fast Food",
+                  "Snacks",
+                  "Bengali",
+                  "Kebabs",
+                  "Beverages",
+                  "Healthy Food",
+                  "Chinese"
+                ],
+                "avgRating": 4.1,
+                "parentId": "493982",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 33,
+                  "lastMileTravel": 4.8,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.8 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 05:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/rolls-on-wheels-shawarma-and-wraps-1st-block-rajajinagar-bangalore-352159",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "75878",
+                "name": "CakeZone Patisserie",
+                "cloudinaryImageId": "be330f6d8f109c8eee9ea0e3bea704f4",
+                "locality": "1ST BLOCK",
+                "areaName": "Dr Rajkumar Road",
+                "costForTwo": "₹200 for two",
+                "cuisines": ["Bakery", "Desserts", "Sweets", "Ice Cream"],
+                "avgRating": 4.3,
+                "parentId": "7003",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "10K+",
                 "sla": {
                   "deliveryTime": 39,
                   "lastMileTravel": 4.8,
@@ -226,7 +1862,1368 @@
                   "iconType": "ICON_TYPE_EMPTY"
                 },
                 "availability": {
+                  "nextCloseTime": "2024-03-09 02:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹125 OFF",
+                  "subHeader": "ABOVE ₹249",
+                  "discountTag": "FLAT DEAL"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/cakezone-patisserie-1st-block-dr-rajkumar-road-bangalore-75878",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "452278",
+                "name": "Third Wave Coffee",
+                "cloudinaryImageId": "d96267738c19ec62acb5390e52faba41",
+                "locality": "Margosa Road",
+                "areaName": "Malleshwaram",
+                "costForTwo": "₹400 for two",
+                "cuisines": ["Beverages", "Bakery", "Continental"],
+                "avgRating": 4.6,
+                "parentId": "274773",
+                "avgRatingString": "4.6",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 39,
+                  "lastMileTravel": 6.1,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "6.1 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 01:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹50 OFF",
+                  "subHeader": "ABOVE ₹250",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/third-wave-coffee-margosa-road-malleshwaram-bangalore-452278",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "449276",
+                "name": "Wendy's Burgers",
+                "cloudinaryImageId": "f1aa621021a2826088089b89842d4e7c",
+                "locality": "3rd Stage",
+                "areaName": "Basaveshwar Nagar",
+                "costForTwo": "₹200 for two",
+                "cuisines": [
+                  "Burgers",
+                  "American",
+                  "Fast Food",
+                  "Snacks",
+                  "Beverages"
+                ],
+                "avgRating": 4.1,
+                "parentId": "972",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 37,
+                  "lastMileTravel": 4.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "4.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
                   "nextCloseTime": "2024-03-08 23:59:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "ITEMS",
+                  "subHeader": "AT ₹149"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/wendys-burgers-3rd-stage-basaveshwar-nagar-bangalore-449276",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "311248",
+                "name": "Keventers - Milkshakes & Desserts",
+                "cloudinaryImageId": "1c8517dc925655dfff4d3617bd2191a5",
+                "locality": "Ms Ramaiah Nagar",
+                "areaName": "New BEL Road",
+                "costForTwo": "₹200 for two",
+                "cuisines": [
+                  "Beverages",
+                  "Ice Cream",
+                  "Desserts",
+                  "Healthy Food"
+                ],
+                "avgRating": 4.1,
+                "veg": true,
+                "parentId": "268997",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 32,
+                  "lastMileTravel": 5.9,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.9 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 03:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/keventers-milkshakes-and-desserts-ms-ramaiah-nagar-new-bel-road-bangalore-311248",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "223177",
+                "name": "Sweet Truth - Cake and Desserts",
+                "cloudinaryImageId": "81cf6bfe2760a45a0caf2e28716ca4d7",
+                "locality": "3rd Stage",
+                "areaName": "Basaveshwar Nagar",
+                "costForTwo": "₹450 for two",
+                "cuisines": ["Snacks", "Bakery", "Desserts", "Beverages"],
+                "avgRating": 4.3,
+                "parentId": "4444",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "500+",
+                "sla": {
+                  "deliveryTime": 31,
+                  "lastMileTravel": 4.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:59:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹110 OFF",
+                  "subHeader": "ABOVE ₹185",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-3rd-stage-basaveshwar-nagar-bangalore-223177",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "3368",
+                "name": "Truffles",
+                "cloudinaryImageId": "cd832b6167eb9f88aeb1ccdebf38d942",
+                "locality": "Ms Ramaiah Nagar",
+                "areaName": "New BEL Road",
+                "costForTwo": "₹450 for two",
+                "cuisines": ["American", "Desserts", "Italian", "Continental"],
+                "avgRating": 4.5,
+                "parentId": "218065",
+                "avgRatingString": "4.5",
+                "totalRatingsString": "10K+",
+                "sla": {
+                  "deliveryTime": 52,
+                  "lastMileTravel": 7.4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "50-55 mins",
+                  "lastMileTravelString": "7.4 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:30:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "v1705582451/Ratnesh_Badges/Listing_HR.png",
+                      "shortDescription": "Perfect Cake Delivery",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "v1705582451/Ratnesh_Badges/Listing_HR.png",
+                            "shortDescription": "Perfect Cake Delivery"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹50 OFF",
+                  "subHeader": "ABOVE ₹199",
+                  "headerTypeV2": "HEADER_TYPE_V2_TOP_UP",
+                  "secondaryDiscountCallout": "+ EXTRA ₹50 OFF"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/truffles-ms-ramaiah-nagar-new-bel-road-bangalore-3368",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "56409",
+                "name": "Frozen Bottle - Milkshakes, Desserts And Ice Cream",
+                "cloudinaryImageId": "xwqxwxg0aiaeqlk2ge1o",
+                "locality": "Basaveshwara Nagar",
+                "areaName": "Basaveshwara Nagar",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                  "Beverages",
+                  "Desserts",
+                  "Ice Cream",
+                  "Waffle",
+                  "Bakery",
+                  "Healthy Food"
+                ],
+                "avgRating": 4.1,
+                "veg": true,
+                "parentId": "5655",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 30,
+                  "lastMileTravel": 4.4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.4 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 03:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹75 OFF",
+                  "subHeader": "ABOVE ₹250",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/frozen-bottle-milkshakes-desserts-and-ice-cream-basaveshwara-nagar-bangalore-56409",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "758579",
+                "name": "Meat And Eat",
+                "cloudinaryImageId": "beee4fe5d19d9575dc769493331b00c9",
+                "locality": "Ms Ramaiah College Road",
+                "areaName": "New BEL Road",
+                "costForTwo": "₹200 for two",
+                "cuisines": ["American", "Fast Food"],
+                "avgRating": 3.5,
+                "parentId": "632",
+                "avgRatingString": "3.5",
+                "totalRatingsString": "20+",
+                "sla": {
+                  "deliveryTime": 33,
+                  "lastMileTravel": 5.6,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.6 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-15 00:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹75 OFF",
+                  "subHeader": "ABOVE ₹250",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/meat-and-eat-ms-ramaiah-college-road-new-bel-road-bangalore-758579",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+
+            {
+              "info": {
+                "id": "793575",
+                "name": "Sangam Sweets",
+                "cloudinaryImageId": "31227843df2072d7c9b1136e5ce05a52",
+                "locality": "Industrial Town",
+                "areaName": "Basaveshwaranagar",
+                "costForTwo": "₹200 for two",
+                "cuisines": ["Indian"],
+                "avgRating": 4.4,
+                "parentId": "805",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "20+",
+                "sla": {
+                  "deliveryTime": 33,
+                  "lastMileTravel": 6.3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "6.3 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 20:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "isNewlyOnboarded": true,
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/sangam-sweets-industrial-town-basaveshwaranagar-bangalore-793575",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "690552",
+                "name": "Narmada Chain of Restaurant",
+                "cloudinaryImageId": "3bf711cdef6072ae50c099c7e353497e",
+                "locality": "Modi Hospital Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹500 for two",
+                "cuisines": ["Andhra", "Biryani", "South Indian"],
+                "avgRating": 4.5,
+                "parentId": "410569",
+                "avgRatingString": "4.5",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 30,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:59:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹40 OFF",
+                  "subHeader": "ABOVE ₹400",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/narmada-chain-of-restaurant-modi-hospital-road-rajajinagar-bangalore-690552",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "667568",
+                "name": "Popeyes",
+                "cloudinaryImageId": "61f2bd5d86640a55419ffe358af97b03",
+                "locality": "3rd Stage",
+                "areaName": "Basaveshwara Nagar",
+                "costForTwo": "₹500 for two",
+                "cuisines": ["American", "Burgers", "Snacks"],
+                "avgRating": 4.4,
+                "parentId": "397044",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "500+",
+                "sla": {
+                  "deliveryTime": 31,
+                  "lastMileTravel": 4.6,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.6 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹50 OFF",
+                  "subHeader": "ABOVE ₹250",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/popeyes-3rd-stage-basaveshwara-nagar-bangalore-667568",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "450026",
+                "name": "Bangarpet Chats",
+                "cloudinaryImageId": "tzssa0hbfxtedvm4ujyp",
+                "locality": "Mahalakshmipuram",
+                "areaName": "Basaveshwar Nagar",
+                "costForTwo": "₹100 for two",
+                "cuisines": ["Chaat", "Street Food"],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "21568",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "100+",
+                "sla": {
+                  "deliveryTime": 24,
+                  "lastMileTravel": 2.2,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "20-25 mins",
+                  "lastMileTravelString": "2.2 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 21:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "pureveg",
+                            "imageId": "v1695133679/badges/Pure_Veg111.png"
+                          }
+                        }
+                      ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹150 OFF",
+                  "subHeader": "ABOVE ₹449",
+                  "discountTag": "FLAT DEAL"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/bangarpet-chats-mahalakshmipuram-basaveshwar-nagar-bangalore-450026",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "352802",
+                "name": "Grameen Kulfi",
+                "cloudinaryImageId": "heobexshpxxegcexudr0",
+                "locality": "Ganesha Swamil Road",
+                "areaName": "Dasarahalli",
+                "costForTwo": "₹120 for two",
+                "cuisines": ["Ice Cream", "Desserts"],
+                "avgRating": 4.8,
+                "veg": true,
+                "parentId": "12175",
+                "avgRatingString": "4.8",
+                "totalRatingsString": "500+",
+                "sla": {
+                  "deliveryTime": 32,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 00:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹120 OFF",
+                  "subHeader": "ABOVE ₹200",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/grameen-kulfi-ganesha-swamil-road-dasarahalli-bangalore-352802",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "558765",
+                "name": "HRX by EatFit",
+                "cloudinaryImageId": "d8d85afa5c5e92461d30ff2ca867a587",
+                "locality": "Rajajinagar Industrial Town",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹450 for two",
+                "cuisines": ["Healthy Food", "Salads", "Keto", "Pastas"],
+                "avgRating": 4.5,
+                "parentId": "335529",
+                "avgRatingString": "4.5",
+                "totalRatingsString": "100+",
+                "sla": {
+                  "deliveryTime": 32,
+                  "lastMileTravel": 4.8,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "4.8 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 01:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "textExtendedBadges": [
+                    {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "brand",
+                      "fontColor": "#7E808C"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "brand"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹75 OFF",
+                  "subHeader": "ABOVE ₹250",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/hrx-by-eatfit-industrial-town-rajajinagar-bangalore-558765",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "353404",
+                "name": "RNR Biryani - Taste of 1953",
+                "cloudinaryImageId": "titgwthozpmhyzjgdh5u",
+                "locality": "Shivanahalli",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹350 for two",
+                "cuisines": ["Biryani", "South Indian", "Kebabs"],
+                "avgRating": 4.3,
+                "parentId": "11620",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "5K+",
+                "sla": {
+                  "deliveryTime": 35,
+                  "lastMileTravel": 5.7,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "5.7 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 01:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹50 OFF",
+                  "subHeader": "ABOVE ₹250",
+                  "discountTag": "GET"
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/rnr-biryani-taste-of-1953-shivanahalli-rajajinagar-bangalore-353404",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "461240",
+                "name": "Kapoor's Cafe",
+                "cloudinaryImageId": "qpyp67abz4q1jitm7dti",
+                "locality": "Dr Rajkumar Road",
+                "areaName": "Rajajinagar",
+                "costForTwo": "₹500 for two",
+                "cuisines": ["North Indian"],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "114900",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "1K+",
+                "sla": {
+                  "deliveryTime": 38,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-08 23:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "pureveg",
+                            "imageId": "v1695133679/badges/Pure_Veg111.png"
+                          }
+                        }
+                      ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                  },
+                  "freedelMessage": "FREE DELIVERY",
+                  "badgeType": "BADGE_TYPE_ONE_LITE"
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+              },
+              "analytics": {
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
+              },
+              "cta": {
+                "link": "https://www.swiggy.com/restaurants/kapoors-cafe-dr-rajkumar-road-rajajinagar-bangalore-461240",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+            },
+            {
+              "info": {
+                "id": "747638",
+                "name": "Protein Chef",
+                "cloudinaryImageId": "c999cb12e0747d3954d7296fc3e06b83",
+                "locality": "BBMP West",
+                "areaName": "Basaveshwaranagar",
+                "costForTwo": "₹300 for two",
+                "cuisines": ["Indian", "Fast Food", "Snacks"],
+                "avgRating": 4.3,
+                "parentId": "341825",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "100+",
+                "sla": {
+                  "deliveryTime": 30,
+                  "lastMileTravel": 5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "5.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2024-03-09 00:00:00",
                   "opened": true
                 },
                 "badges": {
@@ -289,10 +3286,10 @@
                 "restaurantOfferPresentationInfo": {}
               },
               "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
               },
               "cta": {
-                "link": "https://www.swiggy.com/restaurants/eatfit-1st-block-rajajinagar-bangalore-272241",
+                "link": "https://www.swiggy.com/restaurants/protein-chef-bbmp-west-basaveshwaranagar-bangalore-747638",
                 "text": "RESTAURANT_MENU",
                 "type": "WEBLINK"
               },
@@ -300,276 +3297,29 @@
             },
             {
               "info": {
-                "id": "2415",
-                "name": "Veena Stores",
-                "cloudinaryImageId": "vt1mquaxmeugaf9dl5pp",
-                "locality": "Malleshwaram",
-                "areaName": "Malleshwaram",
-                "costForTwo": "₹100 for two",
-                "cuisines": [
-                  "South Indian"
-                ],
-                "avgRating": 4.7,
-                "parentId": "20940",
-                "avgRatingString": "4.7",
-                "totalRatingsString": "10K+",
-                "sla": {
-                  "deliveryTime": 39,
-                  "lastMileTravel": 6.1,
-                  "serviceability": "SERVICEABLE",
-                  "slaString": "35-40 mins",
-                  "lastMileTravelString": "6.1 km",
-                  "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                  "nextCloseTime": "2024-03-08 11:45:00",
-                  "opened": true
-                },
-                "badges": {
-                  "imageBadges": [
-                    {
-                      "imageId": "v1695133679/badges/Pure_Veg111.png",
-                      "description": "pureveg"
-                    }
-                  ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                  "entityBadges": {
-                    "imageBased": {
-                      "badgeObject": [
-                        {
-                          "attributes": {
-                            "description": "pureveg",
-                            "imageId": "v1695133679/badges/Pure_Veg111.png"
-                          }
-                        }
-                      ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                  }
-                },
-                "loyaltyDiscoverPresentationInfo": {
-                  "logoCtx": {
-                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-                  },
-                  "freedelMessage": "FREE DELIVERY",
-                  "badgeType": "BADGE_TYPE_ONE_LITE"
-                },
-                "orderabilityCommunication": {
-                  "title": {},
-                  "subTitle": {},
-                  "message": {},
-                  "customIcon": {}
-                },
-                "differentiatedUi": {
-                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                  "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                  }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {}
-              },
-              "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
-              },
-              "cta": {
-                "link": "https://www.swiggy.com/restaurants/veena-stores-malleshwaram-bangalore-2415",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-              },
-              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-            },
-            {
-              "info": {
-                "id": "807688",
-                "name": "Starbucks Coffee",
-                "cloudinaryImageId": "2418209798927d733a50f5d2ebcc2aee",
-                "locality": "Tumkar Rd",
-                "areaName": "Deccan Heights",
-                "costForTwo": "₹400 for two",
-                "cuisines": [
-                  "Beverages",
-                  "Cafe",
-                  "Snacks",
-                  "Desserts",
-                  "Bakery",
-                  "Ice Cream"
-                ],
-                "avgRating": 4,
-                "parentId": "195515",
-                "avgRatingString": "4.0",
-                "totalRatingsString": "10+",
-                "sla": {
-                  "deliveryTime": 29,
-                  "lastMileTravel": 2.5,
-                  "serviceability": "SERVICEABLE",
-                  "slaString": "25-30 mins",
-                  "lastMileTravelString": "2.5 km",
-                  "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                  "nextCloseTime": "2024-03-08 23:59:00",
-                  "opened": true
-                },
-                "badges": {},
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                  "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                  }
-                },
-                "aggregatedDiscountInfoV3": {
-                  "header": "₹100 OFF",
-                  "subHeader": "ABOVE ₹200",
-                  "discountTag": "GET"
-                },
-                "loyaltyDiscoverPresentationInfo": {
-                  "logoCtx": {
-                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-                  },
-                  "freedelMessage": "FREE DELIVERY",
-                  "badgeType": "BADGE_TYPE_ONE_LITE"
-                },
-                "orderabilityCommunication": {
-                  "title": {},
-                  "subTitle": {},
-                  "message": {},
-                  "customIcon": {}
-                },
-                "differentiatedUi": {
-                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                  "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                  }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "isNewlyOnboarded": true,
-                "restaurantOfferPresentationInfo": {}
-              },
-              "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
-              },
-              "cta": {
-                "link": "https://www.swiggy.com/restaurants/starbucks-coffee-tumkar-rd-deccan-heights-bangalore-807688",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-              },
-              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-            },
-            {
-              "info": {
-                "id": "170196",
-                "name": "Burger King",
-                "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-                "locality": "Orion mall",
+                "id": "14417",
+                "name": "A2B - Adyar Ananda Bhavan",
+                "cloudinaryImageId": "btddmf7xu1yve2gkyeu4",
+                "locality": "Bhashyam Circle",
                 "areaName": "Rajajinagar",
-                "costForTwo": "₹350 for two",
+                "costForTwo": "₹300 for two",
                 "cuisines": [
-                  "Burgers",
-                  "American"
-                ],
-                "avgRating": 4.3,
-                "parentId": "166",
-                "avgRatingString": "4.3",
-                "totalRatingsString": "5K+",
-                "sla": {
-                  "deliveryTime": 48,
-                  "lastMileTravel": 4.8,
-                  "serviceability": "SERVICEABLE",
-                  "slaString": "45-50 mins",
-                  "lastMileTravelString": "4.8 km",
-                  "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                  "nextCloseTime": "2024-03-08 23:00:00",
-                  "opened": true
-                },
-                "badges": {},
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                  "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                  }
-                },
-                "aggregatedDiscountInfoV3": {
-                  "header": "ITEMS",
-                  "subHeader": "AT ₹129"
-                },
-                "loyaltyDiscoverPresentationInfo": {
-                  "logoCtx": {
-                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-                  },
-                  "freedelMessage": "FREE DELIVERY",
-                  "badgeType": "BADGE_TYPE_ONE_LITE"
-                },
-                "orderabilityCommunication": {
-                  "title": {},
-                  "subTitle": {},
-                  "message": {},
-                  "customIcon": {}
-                },
-                "differentiatedUi": {
-                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                  "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                  }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {}
-              },
-              "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
-              },
-              "cta": {
-                "link": "https://www.swiggy.com/restaurants/burger-king-orion-mall-rajajinagar-bangalore-170196",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-              },
-              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-            },
-            {
-              "info": {
-                "id": "10815",
-                "name": "Subway",
-                "cloudinaryImageId": "63178e3e64d503a479f2a2048a474552",
-                "locality": "Orion Mall",
-                "areaName": "Malleshwaram",
-                "costForTwo": "₹350 for two",
-                "cuisines": [
-                  "Salads",
-                  "Snacks",
-                  "Desserts",
-                  "Beverages"
+                  "South Indian",
+                  "North Indian",
+                  "Sweets",
+                  "Chinese"
                 ],
                 "avgRating": 4.4,
-                "parentId": "2",
+                "veg": true,
+                "parentId": "22",
                 "avgRatingString": "4.4",
                 "totalRatingsString": "10K+",
                 "sla": {
-                  "deliveryTime": 46,
-                  "lastMileTravel": 4.8,
+                  "deliveryTime": 40,
+                  "lastMileTravel": 6.5,
                   "serviceability": "SERVICEABLE",
-                  "slaString": "45-50 mins",
-                  "lastMileTravelString": "4.8 km",
+                  "slaString": "40-45 mins",
+                  "lastMileTravelString": "6.5 km",
                   "iconType": "ICON_TYPE_EMPTY"
                 },
                 "availability": {
@@ -577,103 +3327,6 @@
                   "opened": true
                 },
                 "badges": {
-                  "textExtendedBadges": [
-                    {
-                      "iconId": "guiltfree/GF_Logo_android_3x",
-                      "shortDescription": "options available",
-                      "fontColor": "#7E808C"
-                    }
-                  ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                  "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                      "badgeObject": [
-                        {
-                          "attributes": {
-                            "description": "",
-                            "fontColor": "#7E808C",
-                            "iconId": "guiltfree/GF_Logo_android_3x",
-                            "shortDescription": "options available"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                "aggregatedDiscountInfoV3": {
-                  "header": "₹175 OFF",
-                  "subHeader": "ABOVE ₹999",
-                  "discountTag": "FLAT DEAL"
-                },
-                "loyaltyDiscoverPresentationInfo": {
-                  "logoCtx": {
-                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-                  },
-                  "freedelMessage": "FREE DELIVERY",
-                  "badgeType": "BADGE_TYPE_ONE_LITE"
-                },
-                "orderabilityCommunication": {
-                  "title": {},
-                  "subTitle": {},
-                  "message": {},
-                  "customIcon": {}
-                },
-                "differentiatedUi": {
-                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                  "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                  }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {}
-              },
-              "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
-              },
-              "cta": {
-                "link": "https://www.swiggy.com/restaurants/subway-orion-mall-malleshwaram-bangalore-10815",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-              },
-              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-            },
-            {
-              "info": {
-                "id": "285544",
-                "name": "Kanti Sweets",
-                "cloudinaryImageId": "v6tmxsteifgodfjjhyxf",
-                "locality": "KGNSS Layout",
-                "areaName": "Rajagopala Nagar",
-                "costForTwo": "₹100 for two",
-                "cuisines": [
-                  "Sweets"
-                ],
-                "avgRating": 4.6,
-                "veg": true,
-                "parentId": "4700",
-                "avgRatingString": "4.6",
-                "totalRatingsString": "1K+",
-                "sla": {
-                  "deliveryTime": 29,
-                  "lastMileTravel": 2.7,
-                  "serviceability": "SERVICEABLE",
-                  "slaString": "25-30 mins",
-                  "lastMileTravelString": "2.7 km",
-                  "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                  "nextCloseTime": "2024-03-08 22:45:00",
-                  "opened": true
-                },
-                "badges": {
                   "imageBadges": [
                     {
                       "imageId": "v1695133679/badges/Pure_Veg111.png",
@@ -699,84 +3352,9 @@
                     "textExtendedBadges": {}
                   }
                 },
-                "loyaltyDiscoverPresentationInfo": {
-                  "logoCtx": {
-                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-                  },
-                  "freedelMessage": "FREE DELIVERY",
-                  "badgeType": "BADGE_TYPE_ONE_LITE"
-                },
-                "orderabilityCommunication": {
-                  "title": {},
-                  "subTitle": {},
-                  "message": {},
-                  "customIcon": {}
-                },
-                "differentiatedUi": {
-                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                  "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                  }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {}
-              },
-              "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
-              },
-              "cta": {
-                "link": "https://www.swiggy.com/restaurants/kanti-sweets-kgnss-layout-rajagopala-nagar-bangalore-285544",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-              },
-              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-            },
-            {
-              "info": {
-                "id": "487868",
-                "name": "Chinese Wok",
-                "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
-                "locality": "HBCS Layout",
-                "areaName": "Basaveshwara Nagar",
-                "costForTwo": "₹250 for two",
-                "cuisines": [
-                  "Chinese",
-                  "Asian",
-                  "Tibetan",
-                  "Desserts"
-                ],
-                "avgRating": 4.3,
-                "parentId": "61955",
-                "avgRatingString": "4.3",
-                "totalRatingsString": "1K+",
-                "sla": {
-                  "deliveryTime": 33,
-                  "lastMileTravel": 4,
-                  "serviceability": "SERVICEABLE",
-                  "slaString": "30-35 mins",
-                  "lastMileTravelString": "4.0 km",
-                  "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                  "nextCloseTime": "2024-03-09 02:00:00",
-                  "opened": true
-                },
-                "badges": {},
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                  "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                  }
-                },
                 "aggregatedDiscountInfoV3": {
-                  "header": "₹120 OFF",
-                  "subHeader": "ABOVE ₹200",
+                  "header": "₹50 OFF",
+                  "subHeader": "ABOVE ₹250",
                   "discountTag": "GET"
                 },
                 "loyaltyDiscoverPresentationInfo": {
@@ -805,10 +3383,10 @@
                 "restaurantOfferPresentationInfo": {}
               },
               "analytics": {
-                "context": "seo-data-cec5bada-a1b5-4977-86b8-80c75bc92320"
+                "context": "seo-data-b68e6651-ae02-4479-a74d-c9344028b36b"
               },
               "cta": {
-                "link": "https://www.swiggy.com/restaurants/chinese-wok-hbcs-layout-basaveshwara-nagar-bangalore-487868",
+                "link": "https://www.swiggy.com/restaurants/a2b-adyar-ananda-bhavan-bhashyam-circle-rajajinagar-bangalore-14417",
                 "text": "RESTAURANT_MENU",
                 "type": "WEBLINK"
               },
