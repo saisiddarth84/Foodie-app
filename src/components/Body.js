@@ -1,27 +1,55 @@
 import RestaurantCard from "./RestaurantCard";
-import data from "../../data.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 
-const resList = data.card.card.gridElements.infoWithStyle.restaurants;
+let restaurantList = [];
 
 const Body = () => {
   //Local State Variable - Super powerful variable
-  const [listOfRestaurants, setListofRestaurant] = useState(resList);
+  const [listOfRestaurants, setListofRestaurant] = useState([]);
   const [isClicked, setIsCliked] = useState(false);
-  const [buttonStyle, setButtonStyle] = useState({backgroundColor: 'f0f0f0'})
+  const [buttonStyle, setButtonStyle] = useState({backgroundColor: 'f0f0f0'});
 
+
+  useEffect(()=>{
+    fetchData();
+  }, [])
+
+  const fetchData = async() => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0250302&lng=77.53402419999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    )
+
+    const json = await data.json();
+
+    const resData = json.data.cards.filter(res => res.card.card?.gridElements?.infoWithStyle?.restaurants)
+
+    const resList= resData[0].card.card.gridElements.infoWithStyle.restaurants
+
+    restaurantList = resList;
+
+    setListofRestaurant(resList);
+  }
+  
+  
   const handleClick = () => {
     if(!isClicked){
       const filteredList = listOfRestaurants.filter(
-        (res) => res.info.avgRating > 4.2                );
+        (res) => res.info.avgRating > 4.3                
+      );
       setListofRestaurant(filteredList);
       setIsCliked(true);
       setButtonStyle({backgroundColor: "#ff9305"})
     } else {
-      setListofRestaurant(resList)
+      console.log(restaurantList)
+      setListofRestaurant(restaurantList)
       setIsCliked(false)
       setButtonStyle({backgroundColor: "#f0f0f0"})
     }
+  }
+
+  if(listOfRestaurants.length === 0){
+    return <Shimmer />
   }
  
   return (
