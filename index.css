@@ -44,6 +44,11 @@
   cursor: pointer;
 }
 
+.login-btn{
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
 .cart-image {
   width: 40px;
 }
@@ -121,17 +126,17 @@
 
 
 .shimmer-cards{
-  margin-top: 100px;;
+  margin-top: 70px;
   background-color: #f0f0f0;
   width: 20%;
-  height: 35vh;
+  padding-bottom: 4rem;
   padding-inline: 10px;
   border-radius: 4px;
   
 }
 
 .shimmer-details h1{
-  margin-top: 50%;
+  margin-top: 70%;
   background-color:#dfdbdba2;
   width: 70%;
   height: 20px;

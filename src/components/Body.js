@@ -2,14 +2,17 @@ import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
-let restaurantList = [];
-
 const Body = () => {
   //Local State Variable - Super powerful variable
   const [listOfRestaurants, setListofRestaurant] = useState([]);
+  const [filteredRestaurants, setFilteredRestaurant] = useState([]);
+  const [topRatedRestaurants, setTopRatedRestaurant] = useState([]);
+  
   const [isClicked, setIsCliked] = useState(false);
-  const [buttonStyle, setButtonStyle] = useState({backgroundColor: 'f0f0f0'});
-
+  const [buttonStyle, setButtonStyle] = useState({backgroundColor: '#f0f0f0'});
+  const [searchText, setSearchText] = useState("");
+  
+  // Whenever state variables update , react triggers a reconcialiation cycle(re-renders the component)
 
   useEffect(()=>{
     fetchData();
@@ -17,7 +20,7 @@ const Body = () => {
 
   const fetchData = async() => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0250302&lng=77.53402419999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      'https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0250302&lng=77.53402419999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING'
     )
 
     const json = await data.json();
@@ -26,38 +29,43 @@ const Body = () => {
 
     const resList= resData[0].card.card.gridElements.infoWithStyle.restaurants
 
-    restaurantList = resList;
-
     setListofRestaurant(resList);
+    setFilteredRestaurant(resList);
   }
-  
   
   const handleClick = () => {
     if(!isClicked){
       const filteredList = listOfRestaurants.filter(
         (res) => res.info.avgRating > 4.3                
       );
-      setListofRestaurant(filteredList);
+      setFilteredRestaurant(filteredList)
       setIsCliked(true);
-      setButtonStyle({backgroundColor: "#ff9305"})
+      setButtonStyle({backgroundColor: "#ff9305"});
+      setTopRatedRestaurant(filteredList);
     } else {
-      console.log(restaurantList)
-      setListofRestaurant(restaurantList)
+      setFilteredRestaurant(listOfRestaurants)
       setIsCliked(false)
       setButtonStyle({backgroundColor: "#f0f0f0"})
+      setTopRatedRestaurant([]);
     }
   }
 
-  if(listOfRestaurants.length === 0){
-    return <Shimmer />
-  }
- 
-  return (
+  // Conditional Rendering
+
+  return listOfRestaurants.length === 0 ? (
+   <Shimmer /> 
+  ) : (
     <div className="body">
       <div className="search-filter-container">
         <div className="search">
-          <input placeholder="Search Restaurant" />
-          <button>Search</button>
+          <input onChange={(e) => {
+            setSearchText(e.target.value);
+          }} placeholder="Search Restaurant" />
+          <button onClick={() => {
+              let list = isClicked === false ? filteredRestaurants : topRatedRestaurants;
+              const searchList = list.filter(restaurant => restaurant.info.name.toLowerCase().includes(searchText.toLowerCase()))
+              setFilteredRestaurant(searchList)            
+          }}>Search</button>
         </div>
         <div className="filter">
           <button
@@ -70,7 +78,7 @@ const Body = () => {
         </div>
       </div>
       <div className="res-container">
-        {listOfRestaurants.map((restaurant) => (
+        {filteredRestaurants.map((restaurant) => (
           <RestaurantCard key={restaurant.info.id} resData={restaurant.info} />
         ))}
       </div>
