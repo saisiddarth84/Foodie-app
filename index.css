@@ -84,6 +84,12 @@
     gap: 40px;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
 .res-card{
     width: 20%;
     border-radius: 6px;
@@ -91,6 +97,9 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     transition:transform 0.4s;
+    background-color: #f0f0f0;
+
+
 }
 
 .res-card:hover{
@@ -108,7 +117,6 @@
 }
 
 .res-details{
-  
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -186,4 +194,67 @@
   .shimmer-cards{
     width: 70%;
   }
+}
+
+
+/* Restauarant  */
+
+.menu-container{
+  width: 80%;
+  margin: 5% auto;
+}
+.menu-res-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(173, 173, 173, 0.438);
+
+}
+
+.dropdown-menu-container{
+  padding: 1rem;
+  border-bottom: 10px solid rgba(128, 128, 128, 0.164);
+}
+
+.dropdown-menu{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+
+.down-arrow{
+  width: 24px;
+}
+
+.recipe-section{
+  max-height: fit-content;
+  transition: height 5s;
+}
+
+.recipe-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image{
+  width: 20%;
+}
+
+.recipe-name{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.recipe-description{
+  margin-top: 20px;
+  color: rgb(182, 182, 182);
+  font-size: 14px;
+  width: 90%;
+  text-align: justify;
 }
