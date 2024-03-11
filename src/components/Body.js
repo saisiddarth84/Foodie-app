@@ -1,9 +1,11 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import {Link} from "react-router-dom"
 
 const Body = () => {
   //Local State Variable - Super powerful variable
+  // State variables are meant to be created inside the functional component on Higher level which is best practice 
   const [listOfRestaurants, setListofRestaurant] = useState([]);
   const [filteredRestaurants, setFilteredRestaurant] = useState([]);
   const [topRatedRestaurants, setTopRatedRestaurant] = useState([]);
@@ -79,7 +81,9 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredRestaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant.info} />
+          <Link className="res-card" key={restaurant.info.id} to={"/restaurant/" + restaurant.info.id}>
+            <RestaurantCard resData={restaurant.info} /> 
+          </Link>
         ))}
       </div>
     </div>
