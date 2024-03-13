@@ -1,77 +1,93 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withTopRated } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import useRestaurantList from "../utils/useRestaurantList";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   //Local State Variable - Super powerful variable
-  // State variables are meant to be created inside the functional component on Higher level which is best practice 
-  const [listOfRestaurants, setListofRestaurant] = useState([]);
+  // State variables are meant to be created inside the functional component on Higher level which is best practice
+  //const [listOfRestaurants, setListofRestaurant] = useState([]);
   const [filteredRestaurants, setFilteredRestaurant] = useState([]);
   const [topRatedRestaurants, setTopRatedRestaurant] = useState([]);
-  
+
   const [isClicked, setIsCliked] = useState(false);
-  const [buttonStyle, setButtonStyle] = useState({backgroundColor: '#f0f0f0'});
+  const [buttonStyle, setButtonStyle] = useState({
+    backgroundColor: "#f0f0f0",
+  });
   const [searchText, setSearchText] = useState("");
-  
+
   // Whenever state variables update , react triggers a reconcialiation cycle(re-renders the component)
 
-  useEffect(()=>{
-    fetchData();
-  }, [])
+  const RestaurantCardTopRated = withTopRated(RestaurantCard);
 
-  const fetchData = async() => {
-    const data = await fetch(
-      'https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0250302&lng=77.53402419999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING'
-    )
+  const listOfRestaurants = useRestaurantList();
 
-    const json = await data.json();
-
-    const resData = json.data.cards.filter(res => res.card.card?.gridElements?.infoWithStyle?.restaurants)
-
-    const resList= resData[0].card.card.gridElements.infoWithStyle.restaurants
-
-    setListofRestaurant(resList);
-    setFilteredRestaurant(resList);
+  if (!filteredRestaurants.length && listOfRestaurants) {
+    setFilteredRestaurant(listOfRestaurants);
   }
-  
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false) {
+    return (
+      <h1>Looks like your offline!!! Please check you internet connection;</h1>
+    );
+  }
+
+
   const handleClick = () => {
-    if(!isClicked){
+    if (!isClicked) {
       const filteredList = listOfRestaurants.filter(
-        (res) => res.info.avgRating > 4.3                
+        (res) => res.info.avgRating > 4.3
       );
-      setFilteredRestaurant(filteredList)
+      setFilteredRestaurant(filteredList);
       setIsCliked(true);
-      setButtonStyle({backgroundColor: "#ff9305"});
+      setButtonStyle({ backgroundColor: "#ff9305" });
       setTopRatedRestaurant(filteredList);
     } else {
-      setFilteredRestaurant(listOfRestaurants)
-      setIsCliked(false)
-      setButtonStyle({backgroundColor: "#f0f0f0"})
+      setFilteredRestaurant(listOfRestaurants);
+      setIsCliked(false);
+      setButtonStyle({ backgroundColor: "#f0f0f0" });
       setTopRatedRestaurant([]);
     }
-  }
+  };
 
   // Conditional Rendering
 
-  return listOfRestaurants.length === 0 ? (
-   <Shimmer /> 
+  return listOfRestaurants === null ? (
+    <Shimmer />
   ) : (
     <div className="body">
-      <div className="search-filter-container">
+      <div className="flex justify-center items-center gap-40 m-8 ">
         <div className="search">
-          <input onChange={(e) => {
-            setSearchText(e.target.value);
-          }} placeholder="Search Restaurant" />
-          <button onClick={() => {
-              let list = isClicked === false ? filteredRestaurants : topRatedRestaurants;
-              const searchList = list.filter(restaurant => restaurant.info.name.toLowerCase().includes(searchText.toLowerCase()))
-              setFilteredRestaurant(searchList)            
-          }}>Search</button>
+          <input
+            className=" bg-slate-100 mx-4 py-2 px-4  border-gray-400 outline-lime-500"
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+            placeholder="Search Restaurant"
+          />
+          <button
+            className=" bg-blue-200 p-2 rounded-md"
+            onClick={() => {
+              let list =
+                isClicked === false ? listOfRestaurants : topRatedRestaurants;
+              const searchList = list.filter((restaurant) =>
+                restaurant.info.name
+                  .toLowerCase()
+                  .includes(searchText.toLowerCase())
+              );
+              setFilteredRestaurant(searchList);
+            }}
+          >
+            Search
+          </button>
         </div>
         <div className="filter">
           <button
-            className="filter-btn"
+            className="p-2 rounded-md"
             onClick={handleClick}
             style={buttonStyle}
           >
@@ -79,10 +95,19 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap justify-center gap-14">
         {filteredRestaurants.map((restaurant) => (
-          <Link className="res-card" key={restaurant.info.id} to={"/restaurant/" + restaurant.info.id}>
-            <RestaurantCard resData={restaurant.info} /> 
+          <Link
+            className="w-96"
+            key={restaurant.info.id}
+            to={"/restaurant/" + restaurant.info.id}
+          >
+            {restaurant.info.avgRating > 4.5 ? (
+              <RestaurantCardTopRated resData={restaurant.info}  /> 
+              ):(
+                <RestaurantCard resData={restaurant.info} />
+              ) 
+            }
           </Link>
         ))}
       </div>
@@ -91,5 +116,4 @@ const Body = () => {
 };
 
 // not using keys(not acceptable) <<<<< index as key <<<<<<<<<<<<< unique id (best practice)
-
 export default Body;
