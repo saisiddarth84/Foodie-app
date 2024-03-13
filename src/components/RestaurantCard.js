@@ -1,4 +1,5 @@
 import { CDN_URL } from "../utils/constants";
+import starLogo from "../../assets/images/star-rating.png"
 
 const RestaurantCard = (props) => {
   const { resData } = props;
@@ -15,22 +16,45 @@ const RestaurantCard = (props) => {
   return (
     <div>
       <img
-        className="res-logo"
+        className="w-96 h-72 object-cover rounded-2xl"
         alt="res-logo"
         src={
           CDN_URL + cloudinaryImageId
         }
       />
 
-      <div className="res-details">
-        <h2>{name}</h2>
+      <div className="flex flex-col gap-2 px-2 mt-4">
+        <h2 className="font-bold text-2xl">{name}</h2>
+        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-2 font-medium">
+          <img className="w-5" src={starLogo} />
+          {avgRating + " Rating"} 
+        </div>
+        <div>
+            {sla?.slaString}
+        </div>
+        </div>
         <p>{cuisines.join(", ")}</p>
-        <h4>{avgRating + " Rating"}</h4>
-        <h4>{costForTwo}</h4>
-        <h5>{sla?.slaString}</h5>
+        <div className="font-medium mt-2">{costForTwo}</div>
       </div>
     </div>
   );
 };
+
+// Higher Order Component
+
+// input - RestaurantCard => RestaurantCardPromoted
+
+export const withTopRated = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div className="relative">
+        <label className="absolute overflow-hidden bg-black text-fuchsia-50 p-1 top-1 rounded-lg">Top Rated</label>
+        <RestaurantCard {...props}/>
+      </div>
+    );
+  };
+
+}
 
 export default RestaurantCard;
