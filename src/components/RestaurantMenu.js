@@ -1,20 +1,37 @@
-import useRestaurantMenu from "../utils/useRestaurantMenu"
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 import Shimmer from "./Shimmer";
-import MenuCategory from "./MenuCategory";
+import RestaurantCategory from "./RestaurantCategory";
 import { useParams } from "react-router-dom";
+import ShowItem from "./ShowItem";
+import { useState } from "react";
 
 const RestaurantMenu = () => {
   //const [resInfo, setResInfo] = useState(null);
-  //const [menuInfo, setMenuInfo] = useState({});
+  //const [categories, setcategories] = useState({});
 
-  const {resId} = useParams();
+  const { resId } = useParams();
+
 
   const resInfo = useRestaurantMenu(resId);
 
-  const menuInfo = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.slice(1).filter(menu => menu.card.card.itemCards)
+  const [showIndex, setShowIndex] = useState(0);
 
-  console.log(menuInfo, 'filter')
 
+  const categories =
+    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (menu) =>
+        menu.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    );
+
+
+  function handleShowIndex(index){
+    if(index === showIndex){
+      setShowIndex(-1)
+    } else{
+      setShowIndex(index)
+    }
+  }
 
   if (resInfo === null) {
     return <Shimmer />;
@@ -30,32 +47,42 @@ const RestaurantMenu = () => {
     sla,
   } = resInfo?.cards[0]?.card?.card?.info;
 
-
   return (
-    <div className="menu-container">
-      <div className="menu">
-        <div className="menu-res-details">
-          <div>
-            <h1>{name}</h1>
-            <div>{cuisines.join(", ")}</div>
+    <>
+      <div className="my-10 mx-auto w-2/3  shadow-xl p-6 rounded">
+        <div className="menu">
+          <div className="flex justify-between items-center pb-4 border-dashed border-b-2">
             <div>
-              {areaName} - {sla?.lastMileTravelString}
+              <h1 className=" font-semibold text-3xl">{name}</h1>
+              <div>{cuisines.join(", ")}</div>
+              <div>
+                {areaName} - {sla?.lastMileTravelString}
+              </div>
+              <div className="flex mt-2 gap-8">
+                <div>{sla?.slaString}</div>
+                <div>{costForTwoMessage}</div>
+              </div>
             </div>
-            <div style={{ marginTop: "2%", display: "flex", gap: "30px" }}>
-              <div>{sla?.slaString}</div>
-              <div>{costForTwoMessage}</div>
+            <div>
+              <div>{avgRatingString}</div>
+              <div>{totalRatingsString}</div>
             </div>
-          </div>
-          <div>
-            <div>{avgRatingString}</div>
-            <div>{totalRatingsString}</div>
           </div>
         </div>
+        {/* categories accordions*/}
+        {categories.map((category, index) => (
+          //controlled component
+          <RestaurantCategory
+            key={category.card.card.title}
+            data={category.card.card}
+            showItems={index === showIndex ? true : false}
+            setShowIndex={ () => handleShowIndex(index) }
+          />
+        ))}
       </div>
-      {menuInfo.map((menu,index) => (
-        <MenuCategory key={index} menuList={menu.card.card} />
-      ))}
-    </div>
+
+      <ShowItem />
+    </>
   );
 };
 
