@@ -2,7 +2,7 @@ import { CDN_URL } from "../utils/constants";
 import starLogo from "../../assets/images/star-rating.png"
 
 const RestaurantCard = (props) => {
-  const { resData } = props;
+  const { resData} = props;
 
   const { 
     name,
@@ -13,10 +13,11 @@ const RestaurantCard = (props) => {
     sla 
   } = resData;
 
+
   return (
-    <div>
+    <div data-testid="restCard">
       <img
-        className="w-96 h-72 object-cover rounded-2xl"
+        className="w-full h-60 object-cover rounded-2xl"
         alt="res-logo"
         src={
           CDN_URL + cloudinaryImageId
@@ -24,7 +25,7 @@ const RestaurantCard = (props) => {
       />
 
       <div className="flex flex-col gap-2 px-2 mt-4">
-        <h2 className="font-bold text-2xl">{name}</h2>
+        <h2 className="font-bold text-2xl ">{name}</h2>
         <div className="flex items-center gap-10">
         <div className="flex items-center gap-2 font-medium">
           <img className="w-5" src={starLogo} />
@@ -34,7 +35,7 @@ const RestaurantCard = (props) => {
             {sla?.slaString}
         </div>
         </div>
-        <p>{cuisines.join(", ")}</p>
+        <p className="w-80">{(cuisines.length > 4 ? cuisines.splice(3,3) : cuisines).join(", ")}</p>
         <div className="font-medium mt-2">{costForTwo}</div>
       </div>
     </div>
@@ -45,11 +46,11 @@ const RestaurantCard = (props) => {
 
 // input - RestaurantCard => RestaurantCardPromoted
 
-export const withTopRated = (RestaurantCard) => {
+export const withPromoted = (RestaurantCard) => {
   return (props) => {
     return (
       <div className="relative">
-        <label className="absolute overflow-hidden bg-black text-fuchsia-50 p-1 top-1 rounded-lg">Top Rated</label>
+        <label className="absolute overflow-hidden bg-black text-fuchsia-50 p-1 top-1 rounded-lg">Promoted</label>
         <RestaurantCard {...props}/>
       </div>
     );

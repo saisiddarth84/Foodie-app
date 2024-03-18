@@ -1,10 +1,11 @@
-import RestaurantCard, { withTopRated } from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import RestaurantCard, { withPromoted } from "./RestaurantCard";
+import { useState, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantList from "../utils/useRestaurantList";
 import useOnlineStatus from "../utils/useOnlineStatus";
-
+import UserContext from "../utils/UserContext";
+import User from "./User";
 const Body = () => {
   //Local State Variable - Super powerful variable
   // State variables are meant to be created inside the functional component on Higher level which is best practice
@@ -18,9 +19,11 @@ const Body = () => {
   });
   const [searchText, setSearchText] = useState("");
 
+  const {loggedInUser, setUserName} = useContext(UserContext);
+
   // Whenever state variables update , react triggers a reconcialiation cycle(re-renders the component)
 
-  const RestaurantCardTopRated = withTopRated(RestaurantCard);
+  const RestaurantCardPromoted = withPromoted(RestaurantCard);
 
   const listOfRestaurants = useRestaurantList();
 
@@ -32,7 +35,7 @@ const Body = () => {
 
   if (onlineStatus === false) {
     return (
-      <h1>Looks like your offline!!! Please check you internet connection;</h1>
+      <h1 className="text-xl text-center m-auto">Looks like your offline!!! Please check you internet connection;</h1>
     );
   }
 
@@ -59,11 +62,16 @@ const Body = () => {
   return listOfRestaurants === null ? (
     <Shimmer />
   ) : (
-    <div className="body">
+    <>
+
+    <div className="mt-4">
       <div className="flex justify-center items-center gap-40 m-8 ">
         <div className="search">
           <input
-            className=" bg-slate-100 mx-4 py-2 px-4  border-gray-400 outline-lime-500"
+            type="text"
+            data-testid="searchInput"
+            className="bg-slate-100 mx-4 py-2 px-4  border-gray-400 outline-lime-500"
+            value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
@@ -72,8 +80,7 @@ const Body = () => {
           <button
             className=" bg-blue-200 p-2 rounded-md"
             onClick={() => {
-              let list =
-                isClicked === false ? listOfRestaurants : topRatedRestaurants;
+              let list = isClicked === false ? listOfRestaurants : topRatedRestaurants;
               const searchList = list.filter((restaurant) =>
                 restaurant.info.name
                   .toLowerCase()
@@ -94,16 +101,17 @@ const Body = () => {
             Top Rated Restaurants
           </button>
         </div>
+  
       </div>
-      <div className="flex flex-wrap justify-center gap-14">
+      <div className="flex flex-wrap justify-center items-center gap-14">
         {filteredRestaurants.map((restaurant) => (
           <Link
-            className="w-96"
+            className="w-96 bg-slate-100 p-4 rounded"
             key={restaurant.info.id}
             to={"/restaurant/" + restaurant.info.id}
           >
             {restaurant.info.avgRating > 4.5 ? (
-              <RestaurantCardTopRated resData={restaurant.info}  /> 
+              <RestaurantCardPromoted resData={restaurant.info}  /> 
               ):(
                 <RestaurantCard resData={restaurant.info} />
               ) 
@@ -112,6 +120,7 @@ const Body = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
