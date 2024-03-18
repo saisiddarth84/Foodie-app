@@ -40,3 +40,25 @@ global.fetch = jest.fn(() => {
     expect(cardsAfterSearch.length).toBe(5)
   
   });
+    
+  it("Should filter Top Rated Restaurant", async () => {
+    await act(async () => {
+        render(
+          <BrowserRouter>
+            <Body />
+          </BrowserRouter>
+        );
+      });
+
+    const cardsBeforefilter = screen.getAllByTestId("restCard")  
+
+    expect(cardsBeforefilter.length).toBe(20);
+
+    const topRatedBtn = screen.getByRole("button", {name: "Top Rated Restaurants"});
+    fireEvent.click(topRatedBtn);
+
+    const cardsAfterFilter = screen.getAllByTestId("restCard");
+    expect(cardsAfterFilter.length).toBe(13)
+  
+    
+  });
