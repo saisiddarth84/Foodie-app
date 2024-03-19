@@ -2,17 +2,16 @@ import { useState } from "react";
 import CartData from "../utils/CartData";
 import { useContext } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, removeItem , updateItem} from "../utils/cartSlice"
+import { addItem, removeItem , updateItem, updateResId} from "../utils/cartSlice"
 import formatCurrency from "../utils/formatCurrency";
 
 
 const ItemList = (props) => {
   const [showContent, setShowContent] = useState(false);
   const [itemCount, setItemCount] = useState(0);
-  
-  const {restaurantId, setAddedRestaurantId, totalItem, setTotal} = useContext(CartData);
 
   const itemList = useSelector((state) => state.cart.items)
+  const restaurantId = useSelector((state) => state.cart.restaurantId)
 
 
   const { itemInfo, resId } = props;
@@ -22,7 +21,6 @@ const ItemList = (props) => {
   const itemIndex = itemList?.findIndex(item => item.id === itemId)
   const quantity = itemList[itemIndex]?.quantity;
 
-  console.log(quantity, 'quan')
 
   const currPrice = price === undefined ? defaultPrice : price;
   const dispatch = useDispatch();
@@ -51,8 +49,7 @@ const ItemList = (props) => {
         setItemCount(itemCount + 1);
         setShowContent(true);   
         if(!restaurantId || restaurantId === resId){
-          setAddedRestaurantId(resId);
-          setTotal(totalItem + 1); 
+          dispatch(updateResId(resId));
           dispatch(addItem({
             id: itemId,
             name: name,
@@ -85,7 +82,7 @@ const ItemList = (props) => {
   }
 
   return (
-    <div className="flex justify-between items-center my-5 pb-10 px-6 shadow-md ">
+    <div className="flex justify-between items-center my-5 pb-10 px-6 shadow-md" data-testid="foodItems">
       <div className="flex flex-col gap-2 w-2/3">
         <div className=" text-lg font-medium">{name}</div>
         <div> ₹ {formatCurrency(currPrice)}</div>
@@ -99,14 +96,14 @@ const ItemList = (props) => {
             onClick={handleClick}
             data-item-id={itemId} 
           >
-            {(showContent || quantity) && (
+            {(quantity) && (
               <div className="flex justify-between" >
                 <div onClick={removeItemList}>-</div>
                 <div>{quantity}</div>
                 <div onClick={addItemList}>+</div>
               </div>
             )}
-            {(!itemCount && !showContent && !quantity) && (
+            {(!quantity) && (
                 <div>Add</div>
             )
 
