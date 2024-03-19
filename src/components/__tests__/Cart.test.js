@@ -7,6 +7,7 @@ import appStore from "../../utils/appStore";
 import Header from "../Header";
 import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
+import Cart from "../Cart";
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
@@ -21,6 +22,7 @@ it("should load Restaurant Menu Component", async () => {
         <Provider store={appStore}>
           <Header />
           <RestaurantMenu />
+          <Cart />
         </Provider>
       </BrowserRouter>
     )
@@ -31,13 +33,56 @@ it("should load Restaurant Menu Component", async () => {
 
   expect(screen.getAllByTestId("foodItems").length).toBe(9);
 
+});
+
+it("should update cart items added in the Header", async () => {
+  await act(async () =>
+    render(
+      <BrowserRouter>
+        <Provider store={appStore}>
+          <Header />
+          <RestaurantMenu />
+          <Cart />
+        </Provider>
+      </BrowserRouter>
+    )
+  );
+
+  const accordianHeader = screen.getByText("Chocolate Ice Creams (9)");
+  fireEvent.click(accordianHeader);
+
   const addBtn = screen.getAllByRole("button", { name: "Add" });
 
   fireEvent.click(addBtn[0]);
 
   expect(screen.getByText("1 items")).toBeInTheDocument();
+});
+
+it("should show added items in the Cart Component", async () => {
+  await act(async () =>
+    render(
+      <BrowserRouter>
+        <Provider store={appStore}>
+          <Header />
+          <RestaurantMenu />
+          <Cart />
+        </Provider>
+      </BrowserRouter>
+    )
+  );
+
+  const accordianHeader = screen.getByText("Chocolate Ice Creams (9)");
+  fireEvent.click(accordianHeader);
+
+  const addBtn = screen.getAllByRole("button", { name: "Add" });
+
+  fireEvent.click(addBtn[3]);
+
+  expect(screen.getByText("2 items")).toBeInTheDocument();
 
   fireEvent.click(addBtn[1]);
 
-  expect(screen.getByText("2 items")).toBeInTheDocument();
+  expect(screen.getByText("3 items")).toBeInTheDocument();
+
+  expect(screen.getAllByTestId("cartItems").length).toBe(3);
 });
