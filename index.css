@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -25,10 +29,9 @@
 }
 
 .logo {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  object-position: 20px bottom;
+  width: 50px;
+  border-radius: 4px;;
+
  
 }
 
@@ -49,14 +52,11 @@
   cursor: pointer;
 }
 
-.cart-image {
-  width: 40px;
-}
-
 .search-filter-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10%;
   margin-block: 20px; 
 }
 .search{
@@ -168,6 +168,13 @@ a{
   height: 15px;
 }
 
+.user-card{
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
 
 
 @media(max-width:1250px){
@@ -195,10 +202,11 @@ a{
     width: 70%;
   }
 }
-
+*/
 
 /* Restauarant  */
 
+/*
 .menu-container{
   width: 80%;
   margin: 5% auto;
@@ -242,8 +250,12 @@ a{
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
+.recipe-container > div{
+  width: 80%;
+}
+
 .recipe-image{
-  width: 20%;
+  width: 120px;
 }
 
 .recipe-name{
@@ -255,6 +267,7 @@ a{
   margin-top: 20px;
   color: rgb(182, 182, 182);
   font-size: 14px;
-  width: 90%;
+  width: 100%;
   text-align: justify;
 }
+*/
