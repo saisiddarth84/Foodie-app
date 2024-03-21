@@ -55,7 +55,7 @@ it("should update cart items added in the Header", async () => {
 
   fireEvent.click(addBtn[0]);
 
-  expect(screen.getByText("1 items")).toBeInTheDocument();
+  expect(screen.getByText("Cart (0)")).toBeInTheDocument();
 });
 
 it("should show added items in the Cart Component", async () => {
@@ -78,11 +78,11 @@ it("should show added items in the Cart Component", async () => {
 
   fireEvent.click(addBtn[3]);
 
-  expect(screen.getByText("2 items")).toBeInTheDocument();
+  expect(screen.getByText("Cart (2)")).toBeInTheDocument();
 
   fireEvent.click(addBtn[1]);
 
-  expect(screen.getByText("3 items")).toBeInTheDocument();
+  expect(screen.getByText("Cart (3)")).toBeInTheDocument();
 
   expect(screen.getAllByTestId("cartItems").length).toBe(3);
 });
