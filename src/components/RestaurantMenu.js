@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
   }
 
   if (resInfo === null) {
-    return <ShimmerCard />;
+    return ;
   }
 
   const {

@@ -14,7 +14,6 @@ const Cart = () => {
 
   const restaurantInfo = useRestaurantMenu(restaurantId)
 
-
   if (!itemList.length) {
     return (
       <div className="text-center  m-10 font-medium text-2xl text-red-400">
@@ -23,8 +22,11 @@ const Cart = () => {
     );
   }
 
-  
-
+  if (restaurantInfo === null) {
+    return (
+      <div className="w-1/3 h-[400px] bg-slate-200 mx-auto my-8"></div>
+    );
+  }
 
   const { name, areaName, cloudinaryImageId } =
     restaurantInfo?.cards[0]?.card?.card.info;
