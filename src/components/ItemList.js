@@ -75,8 +75,7 @@ const ItemList = (props) => {
 
     if(quantity === 1){
         setItemCount(0)
-        setShowContent(false); 
-        setTotal(totalItem - 1)  
+        setShowContent(false);  
         updateItemList(0)
     }
   }
