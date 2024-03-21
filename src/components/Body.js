@@ -1,6 +1,6 @@
 import RestaurantCard, { withPromoted } from "./RestaurantCard";
 import { useState, useContext } from "react";
-import Shimmer from "./Shimmer";
+import ShimmerUI from "./ShimmerUI";
 import { Link } from "react-router-dom";
 import useRestaurantList from "../utils/useRestaurantList";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -60,7 +60,7 @@ const Body = () => {
   // Conditional Rendering
 
   return listOfRestaurants === null ? (
-    <Shimmer />
+    <ShimmerUI />
   ) : (
     <>
 
