@@ -1,5 +1,5 @@
 import useRestaurantMenu from "../utils/useRestaurantMenu";
-import Shimmer from "./Shimmer";
+import ShimmerCard from "./ShimmerCard";
 import RestaurantCategory from "./RestaurantCategory";
 import { useParams } from "react-router-dom";
 import ShowItem from "./ShowItem";
@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
   }
 
   if (resInfo === null) {
-    return <Shimmer />;
+    return <ShimmerCard />;
   }
 
   const {
@@ -77,6 +77,7 @@ const RestaurantMenu = () => {
             data={category.card.card}
             showItems={index === showIndex ? true : false}
             setShowIndex={ () => handleShowIndex(index) }
+            resId={resId}
           />
         ))}
       </div>

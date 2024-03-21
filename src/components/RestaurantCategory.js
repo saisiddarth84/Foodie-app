@@ -3,7 +3,7 @@ import ItemList from "./ItemList.js";
 import { useState } from "react";
 
 const RestaurantCategory = (props) => {
-  const {data, showItems, setShowIndex} = props;
+  const {data, showItems, setShowIndex, resId} = props;
 
   const {itemCards, title} = data;
 
@@ -26,7 +26,7 @@ const RestaurantCategory = (props) => {
       </div>
       <div className="recipe-section">
         {showItems && itemCards?.map(item => (
-          <ItemList key={item.card.info.id} itemInfo={item.card.info} />  
+          <ItemList key={item.card.info.id} itemInfo={item.card.info} resId={resId} />  
         ))}
       </div>
       
