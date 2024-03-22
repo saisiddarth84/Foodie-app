@@ -40,14 +40,14 @@ const Cart = () => {
         <div className="flex items-center gap-10 mb-10">
           <img className="w-20" src={CDN_URL + cloudinaryImageId} />
           <div>
-            <div className="font-semibold text-xl">{name}</div>
+            <div className="font-semibold text-xl w-[60%]">{name}</div>
             <div className="text-gray-400 text-sm">{areaName}</div>
           </div>
         </div>
         {itemList.map((item) => (
           <CartItems key={item.id} itemInfo={item} />
         ))}
-        <div className="flex justify-between mt-6 border-t-2 border-dashed border-t-gray-300 pt-4">
+        <div className="flex justify-between mt-6 border-t-2 border-dashed border-t-gray-300 pt-4 px-16">
           <div className="text-red-700">Total Price: </div>
           <div className="font-medium">
             ₹{" "}
