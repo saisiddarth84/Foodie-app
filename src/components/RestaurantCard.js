@@ -35,7 +35,7 @@ const RestaurantCard = (props) => {
             {sla?.slaString}
         </div>
         </div>
-        <p className="w-80">{(cuisines.length > 4 ? cuisines.splice(3,3) : cuisines).join(", ")}</p>
+        <p className="w-80">{cuisines.join(", ")}</p>
         <div className="font-medium mt-2">{costForTwo}</div>
       </div>
     </div>
