@@ -83,7 +83,7 @@ const ItemList = (props) => {
   return (
     <div className="flex justify-between items-center my-5 pb-10 px-6 shadow-md" data-testid="foodItems">
       <div className="flex flex-col gap-2 w-2/3">
-        <div className=" text-lg font-medium">{name}</div>
+        <div className=" text-[20px] font-medium">{name}</div>
         <div> ₹ {formatCurrency(currPrice)}</div>
         <div className=" text-gray-400">{description}</div>
       </div>

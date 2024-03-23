@@ -15,9 +15,9 @@ const CartItems = ({ itemInfo }) => {
   }
 
   return (
-    <div className="flex justify-between my-4 px-16" data-testid="cartItems">
+    <div className="flex justify-between items-center gap-8 my-6 px-16" data-testid="cartItems">
       <div className="w-56 font-medium">{name}</div>
-      <button className="  bg-lime-50 border-solid border-2 border-lime-400 w-20 mb-5 p-2 rounded-md font-semibold ">
+      <button className="  bg-lime-50 border-solid border-2 border-lime-400 w-20  p-2 rounded-md font-semibold ">
         <div className="flex justify-between">
           <div onClick={() => updateItemList(-1)}>-</div>
           <div>{quantity}</div>

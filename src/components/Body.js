@@ -13,9 +13,9 @@ const Body = () => {
   // State variables are meant to be created inside the functional component on Higher level which is best practice
   //const [listOfRestaurants, setListofRestaurant] = useState([]);
   const [filteredRestaurants, setFilteredRestaurant] = useState([]);
-  const [topRatedResstaurants, setTopRatedRestaurant] = useState([]);
+  const [topRatedRestaurants, setTopRatedRestaurant] = useState([]);
 
-  const [isClicked, setIsCliked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const [buttonStyle, setButtonStyle] = useState({
     backgroundColor: "#f0f0f0",
   });
@@ -40,9 +40,11 @@ const Body = () => {
 
   if (
     (!filteredRestaurants.length && listOfRestaurants) ||
-    (listOfRestaurants &&
+    (listOfRestaurants && !isClicked &&
       filteredRestaurants[0].info.areaName !== listOfRestaurants?.[0].info.areaName)
   ) {
+    console.log('enter')
+    
     setFilteredRestaurant(listOfRestaurants);
   }
 
@@ -62,12 +64,12 @@ const Body = () => {
         (res) => res.info.avgRating > 4.3
       );
       setFilteredRestaurant(filteredList);
-      setIsCliked(true);
+      setIsClicked(true);
       setButtonStyle({ backgroundColor: "#ff9305" });
       setTopRatedRestaurant(filteredList);
     } else {
       setFilteredRestaurant(listOfRestaurants);
-      setIsCliked(false);
+      setIsClicked(false);
       setButtonStyle({ backgroundColor: "#f0f0f0" });
       setTopRatedRestaurant([]);
     }
@@ -81,7 +83,7 @@ const Body = () => {
     <>
     {console.log(listOfRestaurants, 'list')}
       <div className="mt-4">
-        <div className="flex justify-center items-center gap-40 m-8 ">
+        <div className="flex justify-center items-center gap-40 m-8 max-md:gap-2 max-md:justify-between">
           <div className="search">
             <input
               type="text"
@@ -119,14 +121,14 @@ const Body = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-14">
+        <div className="flex flex-wrap justify-center items-center gap-14 max-md:scale-95 ">
           {filteredRestaurants.map((restaurant) => (
             <Link
-              className="w-96 bg-slate-100 p-4 rounded"
+              className="w-96 bg-slate-50 p-4 rounded"
               key={restaurant.info.id}
               to={"/restaurant/" + restaurant.info.id}
             >
-              {restaurant.info.avgRating > 4.5 ? (
+              {restaurant.info.avgRating > 4.6 ? (
                 <RestaurantCardPromoted resData={restaurant.info} />
               ) : (
                 <RestaurantCard resData={restaurant.info} />
