@@ -22,44 +22,45 @@ const ShimmerMenu = () => {
         <h3 className="w-56 h-[30px] mt-5 bg-slate-200"></h3>
         <div className="flex items-center justify-between m-10">
           <div>
-            <div className="w-36 h-[25px] mt-5 bg-slate-200"></div>
+            <div className="w-48 h-[25px] mt-5 bg-slate-200"></div>
             <div className="w-28 h-[20px] mt-5 bg-slate-200"></div>
-            <div className="w-[80%] h-[20px] mt-5 bg-slate-200"></div>
+            <div className="max-lg:w-[80%] w-[600px] h-[20px] mt-5 bg-slate-200"></div>
           </div>
           <div className="w-36 h-[100px] mt-5 bg-slate-200"></div>
         </div>
         <div className="flex items-center justify-between m-10">
           <div>
-            <div className="w-36 h-[25px] mt-5 bg-slate-200"></div>
+            <div className="w-48 h-[25px] mt-5 bg-slate-200"></div>
             <div className="w-28 h-[20px] mt-5 bg-slate-200"></div>
-            <div className="w-[80%] h-[20px] mt-5 bg-slate-200"></div>
+            <div className="max-lg:w-[80%] w-[600px] h-[20px] mt-5 bg-slate-200"></div>
           </div>
           <div className="w-36 h-[100px] mt-5 bg-slate-200"></div>
         </div>
         <div className="flex items-center justify-between m-10">
           <div>
-            <div className="w-36 h-[25px] mt-5 bg-slate-200"></div>
+            <div className="w-48 h-[25px] mt-5 bg-slate-200"></div>
             <div className="w-28 h-[20px] mt-5 bg-slate-200"></div>
-            <div className="w-[80%] h-[20px] mt-5 bg-slate-200"></div>
+            <div className="max-lg:w-[80%] w-[600px] h-[20px] mt-5 bg-slate-200"></div>
           </div>
           <div className="w-36 h-[100px] mt-5 bg-slate-200"></div>
         </div>
         <div className="flex items-center justify-between m-10">
           <div>
-            <div className="w-36 h-[25px] mt-5 bg-slate-200"></div>
+            <div className="w-48 h-[25px] mt-5 bg-slate-200"></div>
             <div className="w-28 h-[20px] mt-5 bg-slate-200"></div>
-            <div className="w-[80%] h-[20px] mt-5 bg-slate-200"></div>
+            <div className="max-lg:w-[80%] w-[600px] h-[20px] mt-5 bg-slate-200"></div>
           </div>
           <div className="w-36 h-[100px] mt-5 bg-slate-200"></div>
         </div>
         <div className="flex items-center justify-between m-10">
           <div>
-            <div className="w-36 h-[25px] mt-5 bg-slate-200"></div>
+            <div className="w-48 h-[25px] mt-5 bg-slate-200"></div>
             <div className="w-28 h-[20px] mt-5 bg-slate-200"></div>
-            <div className="w-[80%] h-[20px] mt-5 bg-slate-200"></div>
+            <div className="max-lg:w-[80%] w-[600px] h-[20px] mt-5 bg-slate-200"></div>
           </div>
           <div className="w-36 h-[100px] mt-5 bg-slate-200"></div>
         </div>
+
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const LocationSideBar = ({isLocationChange, setIsLocationChange}) => {
   const dispatch = useDispatch();
   return (
     <div onClick={() => setIsLocationChange(false)}  className={`fixed justify-center inset-0 bg-black/40 z-30 `}>
-    <div onClick={(e) => e.stopPropagation()} className="w-80 fixed top-0 bottom-0 bg-slate-300">
+    <div onClick={(e) => e.stopPropagation()} className="w-1/3 fixed top-0 bottom-0 bg-slate-300">
       <div className="flex flex-col justify-center gap-5 items-center mt-[50%]">
         <button onClick={() => {
           findLocation('current', dispatch);

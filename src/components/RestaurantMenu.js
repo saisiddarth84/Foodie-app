@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import ShowItem from "./ShowItem";
 import { useState } from "react";
 import ShimmerMenu from "./ShimmerMenu";
+import starLogo from "../../assets/images/star-rating.png";
 
 const RestaurantMenu = () => {
   //const [resInfo, setResInfo] = useState(null);
@@ -12,11 +13,9 @@ const RestaurantMenu = () => {
 
   const { resId } = useParams();
 
-
   const resInfo = useRestaurantMenu(resId);
 
   const [showIndex, setShowIndex] = useState(0);
-
 
   const categories =
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
@@ -25,17 +24,16 @@ const RestaurantMenu = () => {
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
 
-
-  function handleShowIndex(index){
-    if(index === showIndex){
-      setShowIndex(-1)
-    } else{
-      setShowIndex(index)
+  function handleShowIndex(index) {
+    if (index === showIndex) {
+      setShowIndex(-1);
+    } else {
+      setShowIndex(index);
     }
   }
 
   if (resInfo === null) {
-    return <ShimmerMenu/> ;
+    return <ShimmerMenu />;
   }
 
   const {
@@ -50,7 +48,7 @@ const RestaurantMenu = () => {
 
   return (
     <>
-      <div className="my-10 mx-auto w-2/3  shadow-xl p-6 rounded">
+      <div className="my-10 mx-auto w-2/3  shadow-xl p-6 rounded ">
         <div className="menu">
           <div className="flex justify-between items-center pb-4 border-dashed border-b-2">
             <div>
@@ -65,7 +63,10 @@ const RestaurantMenu = () => {
               </div>
             </div>
             <div>
-              <div>{avgRatingString}</div>
+              <div className="flex justify-center items-center gap-1">
+                <img className="w-4" src={starLogo} />
+                <div>{avgRatingString}</div>
+              </div>
               <div>{totalRatingsString}</div>
             </div>
           </div>
@@ -77,7 +78,7 @@ const RestaurantMenu = () => {
             key={category.card.card.title}
             data={category.card.card}
             showItems={index === showIndex ? true : false}
-            setShowIndex={ () => handleShowIndex(index) }
+            setShowIndex={() => handleShowIndex(index)}
             resId={resId}
           />
         ))}

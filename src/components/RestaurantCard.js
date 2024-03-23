@@ -25,7 +25,7 @@ const RestaurantCard = (props) => {
       />
 
       <div className="flex flex-col gap-2 px-2 mt-4">
-        <h2 className="font-bold text-2xl ">{name}</h2>
+        <h2 className="font-semibold text-[22px]  w-full line-clamp-1">{name}</h2>
         <div className="flex items-center gap-10">
         <div className="flex items-center gap-2 font-medium">
           <img className="w-5" src={starLogo} />
@@ -35,7 +35,7 @@ const RestaurantCard = (props) => {
             {sla?.slaString}
         </div>
         </div>
-        <p className="w-80">{cuisines.join(", ")}</p>
+        <p className="w-80">{(cuisines.length > 2 ? cuisines.slice(1,3) : cuisines).join(", ")}</p>
         <div className="font-medium mt-2">{costForTwo}</div>
       </div>
     </div>

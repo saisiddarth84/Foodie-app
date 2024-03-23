@@ -28,6 +28,8 @@ const useRestaurantList = () => {
     const resList= resData[0].card.card.gridElements.infoWithStyle.restaurants
 
     setListofRestaurant(resList)
+
+    console.log(resList)
     
     
   };
