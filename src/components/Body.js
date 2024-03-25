@@ -6,6 +6,7 @@ import useRestaurantList from "../utils/useRestaurantList";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useDispatch, useSelector } from "react-redux";
+import Carousel from "./Carousel";
 
 const Body = () => {
   const latitude = useSelector((store) => store.cart.latitude);
@@ -81,7 +82,7 @@ const Body = () => {
     <ShimmerUI />
   ) : (
     <>
-    {console.log(listOfRestaurants, 'list')}
+      <Carousel />
       <div className="mt-4">
         <div className="flex justify-center items-center gap-40 m-8 max-md:gap-2 max-md:justify-between">
           <div className="search">
