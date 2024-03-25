@@ -81,7 +81,7 @@ const Body = () => {
   return listOfRestaurants === null ? (
     <ShimmerUI />
   ) : (
-    <>
+    <div className="relative">
       <Carousel />
       <div className="mt-4">
         <div className="flex justify-center items-center gap-40 m-8 max-md:gap-2 max-md:justify-between">
@@ -138,7 +138,7 @@ const Body = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
