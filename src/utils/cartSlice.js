@@ -7,7 +7,7 @@ const cartSlice = createSlice({
         restaurantId: '',
         latitude: '13.0250302',
         longitude: '77.53402419999999',
-        address: 'Yestwantpur'
+        address: 'Yeswanthpur, Bengaluru, Bangalore North, Bengaluru Urban, Karnataka, 560022, India'
     },
     reducers: {
         addItem: (state, action) => {

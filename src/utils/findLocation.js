@@ -23,8 +23,7 @@ const findLocation = async (location, dispatch) => {
   } else {
     try {
       const response = await fetch(
-        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
-          location
+        `https://nominatim.openstreetmap.org/search?format=json&q=${location}
         )}`
       );
 
@@ -39,6 +38,7 @@ const findLocation = async (location, dispatch) => {
         lon = data[0].lon;
         dispatch(updateLocation([lat, lon]));
         dispatch(updateAddress(data[0].display_name))
+
       }
     } catch (error) {
       console.error("Error fetching location:", error);
