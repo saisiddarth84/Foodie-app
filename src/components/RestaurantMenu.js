@@ -17,8 +17,9 @@ const RestaurantMenu = () => {
 
   const [showIndex, setShowIndex] = useState(0);
 
-  const categories =
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+  const categories = resInfo?.cards
+    ?.filter((card) => card.groupedCard)[0]
+    .groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (menu) =>
         menu.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
@@ -44,7 +45,11 @@ const RestaurantMenu = () => {
     avgRatingString,
     totalRatingsString,
     sla,
-  } = resInfo?.cards[0]?.card?.card?.info;
+  } = resInfo?.cards.filter(
+    (resCard) =>
+      resCard?.card?.card["@type"] ===
+      "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
+  )[0].card.card.info;
 
   return (
     <>
