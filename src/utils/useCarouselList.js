@@ -10,7 +10,7 @@ const useCarouselList = () => {
     
   useEffect(()=>{
     fetchData();
-  },[])
+  },[latitude,longitude])
 
   const fetchData = async() => {
     const data = await fetch(

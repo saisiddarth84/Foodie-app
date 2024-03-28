@@ -13,6 +13,7 @@ import CartData from "./utils/CartData.js";
 import { useContext } from "react";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore.js";
+import CuisineResCard from "./components/CuisineResCard.js";
 
 // import Grocery from "./components/Grocery.js";
 
@@ -87,9 +88,14 @@ const appRouter = createBrowserRouter([
 
       },
       {
+        path: "/cuisine/:cuisineName/:entityId",
+        element: <CuisineResCard />
+
+      },
+      {
         path: "/restaurant/:resId",
         element: <RestaurantMenu />
-      }
+      },
     ],
     errorElement: <Error />
   },

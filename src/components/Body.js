@@ -7,6 +7,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useDispatch, useSelector } from "react-redux";
 import Carousel from "./Carousel";
+import useCarouselList from "../utils/useCarouselList";
 
 const Body = () => {
   const latitude = useSelector((store) => store.cart.latitude);
@@ -53,8 +54,8 @@ const Body = () => {
 
   if (onlineStatus === false) {
     return (
-      <h1 className="text-xl text-center m-auto">
-        Looks like your offline!!! Please check you internet connection;
+      <h1 className="text-xl text-center m-auto text-red-500 mt-[20%]">
+        Looks like your offline!!! Please check you internet connection..
       </h1>
     );
   }
@@ -78,7 +79,9 @@ const Body = () => {
 
   // Conditional Rendering
 
+
   return listOfRestaurants === null ? (
+  
     <ShimmerUI />
   ) : (
     <div className="relative">

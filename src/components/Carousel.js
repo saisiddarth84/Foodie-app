@@ -7,7 +7,9 @@ import "swiper/swiper-bundle.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import "../../index.css"
-
+import ShimmerCarousel from "./ShimmerCarousel";
+import ShimmerUI from "./ShimmerUI";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const [foodList, setFoodList] = useState([]);
@@ -47,15 +49,27 @@ const Carousel = () => {
     }
   }, [carouselItem, foodList]);
 
+  console.log(carouselItem)
+
+  if(carouselItem === undefined){
+    return 
+  }
+
+
   return carouselItem === null ? (
-    <div></div>
+    <ShimmerUI/>
   ) : (
-    <div className="swiper w-5/6 border-b-2 pb-4">
+    <div className="swiper w-5/6 border-b-2 pb-4 mt-8">
+      <div className="font-semibold text-2xl ">What's On Your Mind?</div>
       <div className="swiper-wrapper mt-20 ">
         {carouselItem.map((item) => (
-          <div key={item.id} className="swiper-slide">
-            <img src={CDN_URL + item.imageId} alt={item.id} className="w-40" />
+           <div key={item.id} className="swiper-slide cursor-pointer mx-2">
+            <Link to={`/cuisine/ ${item.action.text} / ${new URL(item.action.link).searchParams.get("collection_id")}`}>
+              <img src={CDN_URL + item.imageId} alt={item.id} className="w-40 cursor-pointer" />
+            </Link>
           </div>
+      
+         
         ))}
       </div>
 
