@@ -45,7 +45,9 @@ const Header = () => {
     { isLocationChange&& <LocationSideBar isLocationChange={isLocationChange} setIsLocationChange={setIsLocationChange}/>} 
     <div className="flex justify-between items-center  bg-slate-100  mx-4 p-2 shadow-lg rounded-md ">
       <Link to="/">
-        <img src={foodieLogo} className=" max-lg:w-[50px] w-[60px] rounded-md " />
+        <div className="max-lg:w-[50px] w-[60px] ">
+        <img src={foodieLogo} className=" rounded-md " />
+        </div>
       </Link>
       <div className="pl-16 max-lg:w-[60%] flex items-center gap-2 cursor-pointer" onClick={() => setIsLocationChange(!isLocationChange)}>
         <img className="w-4" src={locationLogo} />
