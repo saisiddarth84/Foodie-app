@@ -18,9 +18,6 @@ const Body = () => {
   const [topRatedRestaurants, setTopRatedRestaurant] = useState([]);
 
   const [isClicked, setIsClicked] = useState(false);
-  const [buttonStyle, setButtonStyle] = useState({
-    backgroundColor: "#f0f0f0",
-  });
   const [searchText, setSearchText] = useState("");
   const { loggedInUser, setUserName } = useContext(UserContext);
 
@@ -28,25 +25,21 @@ const Body = () => {
 
   const RestaurantCardPromoted = withPromoted(RestaurantCard);
 
-
-  const listOfRestaurants = useRestaurantList()
+  const listOfRestaurants = useRestaurantList();
 
   useEffect(() => {
-    console.log('effect')
-    
+    console.log("effect");
   }, [latitude]);
-
-
-
- 
 
   if (
     (!filteredRestaurants.length && listOfRestaurants) ||
-    (listOfRestaurants && !isClicked &&
-      filteredRestaurants[0].info.areaName !== listOfRestaurants?.[0].info.areaName)
+    (listOfRestaurants &&
+      !isClicked &&
+      filteredRestaurants[0].info.areaName !==
+        listOfRestaurants?.[0].info.areaName)
   ) {
-    console.log('enter')
-    
+    console.log("enter");
+
     setFilteredRestaurant(listOfRestaurants);
   }
 
@@ -67,21 +60,17 @@ const Body = () => {
       );
       setFilteredRestaurant(filteredList);
       setIsClicked(true);
-      setButtonStyle({ backgroundColor: "#ff9305" });
       setTopRatedRestaurant(filteredList);
     } else {
       setFilteredRestaurant(listOfRestaurants);
       setIsClicked(false);
-      setButtonStyle({ backgroundColor: "#f0f0f0" });
       setTopRatedRestaurant([]);
     }
   };
 
   // Conditional Rendering
 
-
   return listOfRestaurants === null ? (
-  
     <ShimmerUI />
   ) : (
     <div className="relative">
@@ -117,9 +106,11 @@ const Body = () => {
           </div>
           <div className="filter">
             <button
-              className="p-2 rounded-md"
-              onClick={handleClick}
-              style={buttonStyle}
+              className="p-2 bg-slate-200  rounded-md"
+              onClick={(e) => {
+                e.target.classList.toggle("bg-orange-400");
+                handleClick()
+              }}
             >
               Top Rated Restaurants
             </button>
