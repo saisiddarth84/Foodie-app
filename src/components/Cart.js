@@ -10,10 +10,6 @@ import formatCurrency from "../utils/formatCurrency";
 const Cart = () => {
   const itemList = useSelector((store) => store.cart.items);
 
-  const restaurantId = useSelector((store) => store.cart.restaurantId);
-
-  const restaurantInfo = useRestaurantMenu(restaurantId)
-
   if (!itemList.length) {
     return (
       <div className="text-center  m-10 font-medium text-2xl text-red-400">
@@ -22,14 +18,13 @@ const Cart = () => {
     );
   }
 
-  if (restaurantInfo === null) {
-    return (
-      <div className="w-1/3 h-[400px] bg-slate-200 mx-auto my-8"></div>
-    );
-  }
+  const { resInfo } = itemList[0];
 
-  const { name, areaName, cloudinaryImageId } =
-    restaurantInfo?.cards[0]?.card?.card.info;
+  const { resId, name, areaName, cloudinaryImageId } = resInfo;
+
+  if (resId === null) {
+    return <div className="w-1/3 h-[400px] bg-slate-200 mx-auto my-8"></div>;
+  }
 
   return (
     <div className="flex">

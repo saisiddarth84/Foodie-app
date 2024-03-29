@@ -44,12 +44,20 @@ const RestaurantMenu = () => {
     costForTwoMessage,
     avgRatingString,
     totalRatingsString,
+    cloudinaryImageId,
     sla,
   } = resInfo?.cards.filter(
     (resCard) =>
       resCard?.card?.card["@type"] ===
       "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
   )[0].card.card.info;
+
+  const resCardInfo = {
+    resId,
+    name,
+    areaName,
+    cloudinaryImageId,
+  };
 
   return (
     <>
@@ -84,7 +92,7 @@ const RestaurantMenu = () => {
             data={category.card.card}
             showItems={index === showIndex ? true : false}
             setShowIndex={() => handleShowIndex(index)}
-            resId={resId}
+            resInfo={resCardInfo}
           />
         ))}
       </div>
