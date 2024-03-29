@@ -37,6 +37,9 @@ const Carousel = () => {
         600: {
             slidesPerView: 6, 
         },
+        400:{
+          slidesPerView: 2
+        }
  
     },
 
@@ -55,17 +58,16 @@ const Carousel = () => {
     return 
   }
 
-
   return carouselItem === null ? (
     <ShimmerUI/>
   ) : (
-    <div className="swiper w-5/6 border-b-2 pb-4 mt-8">
+    <div className="swiper w-5/6 max-lg:w-[95%] border-b-2 pb-4 mt-8">
       <div className="font-semibold text-2xl ">What's On Your Mind?</div>
       <div className="swiper-wrapper mt-20 ">
         {carouselItem.map((item) => (
-           <div key={item.id} className="swiper-slide cursor-pointer mx-2">
+           <div key={item.id} className="swiper-slide cursor-pointer mx-2 max-lg:mx-0">
             <Link to={`/cuisine/ ${item.action.text} / ${new URL(item.action.link).searchParams.get("collection_id")}`}>
-              <img src={CDN_URL + item.imageId} alt={item.id} className="w-40 cursor-pointer" />
+              <img src={CDN_URL + item.imageId} alt={item.id} className="w-40    cursor-pointer" />
             </Link>
           </div>
       

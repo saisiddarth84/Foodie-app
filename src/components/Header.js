@@ -54,7 +54,7 @@ const Header = () => {
         <div title={address} className="border-b-2 border-black border-opacity-10 line-clamp-1">{address}</div>
       </div>
       {isLargeScreen || isDropDown ? (
-        <div className="dropdown-menu absolute top-[85px] left-0 max-lg:bg-slate-100/75 bg-opacity-95   w-full flex flex-col gap-6 items-center py-2 text-lg lg:static ">
+        <div className="dropdown-menu absolute top-[85px] left-0 max-lg:bg-slate-100/95 bg-opacity-95 z-50   w-full flex flex-col gap-6 items-center py-2 text-lg lg:static ">
           <ul className="flex flex-col items-center gap-6 lg:flex-row lg:self-end">
             <li className="hover:text-lime-400">
               <Link to="/">Home</Link>

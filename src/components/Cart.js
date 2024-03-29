@@ -33,7 +33,7 @@ const Cart = () => {
           My Foodie Cart
         </div>
         <div className="flex items-center gap-10 mb-10">
-          <img className="w-20" src={CDN_URL + cloudinaryImageId} />
+          <img className="w-24" src={CDN_URL + cloudinaryImageId} />
           <div>
             <div className="font-semibold text-xl w-[60%]">{name}</div>
             <div className="text-gray-400 text-sm">{areaName}</div>

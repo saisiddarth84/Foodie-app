@@ -96,7 +96,7 @@ const ItemList = (props) => {
         <div className=" text-gray-400">{description}</div>
       </div>
       <div className="flex flex-col gap-2 relative">
-        <img className="w-40 pt-8" src={image} />
+        <img className="w-40 h-[150px] object-cover pt-8" src={image} />
         <div className="text-center ">
           <button
             className="  bg-lime-200 w-4/5 mb-5 p-2 rounded-md font-semibold text-xl absolute bottom-[-40] left-4"
