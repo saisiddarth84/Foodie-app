@@ -1,5 +1,3 @@
-# Foodie App
-
   <h1><b>🚀Foodie | Your Food Hub</b></h3>
 </div>
 
