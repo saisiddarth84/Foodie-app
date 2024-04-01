@@ -108,6 +108,8 @@ const Body = () => {
             <button
               className="p-2 bg-slate-200  rounded-md"
               onClick={(e) => {
+                e.target.classList.toggle("bg-slate-200");
+
                 e.target.classList.toggle("bg-orange-400");
                 handleClick()
               }}

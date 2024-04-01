@@ -15,10 +15,10 @@ const CuisineResCard = () => {
 
   if (cuisineData === null) {
     return (
-      <div className="m-20 flex flex-col gap-10">
-        <div className="w-56 h-[30px] bg-slate-200"></div>
-        <div className="w-80 h-[30px] bg-slate-200"></div>
-        <div className="w-56 h-[20px] bg-slate-200"></div>
+      <div className="m-20 flex flex-col gap-10 p-4 bg-slate-100">
+        <div className="w-56 h-[25px] bg-slate-200"></div>
+        <div className="w-96 h-[25px] bg-slate-200"></div>
+        <div className="w-56 h-[25px] bg-slate-200"></div>
         <div className="flex justify-center items-center gap-14 flex-wrap   ">
           <ShimmerCard />
           <ShimmerCard />
