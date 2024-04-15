@@ -41,7 +41,6 @@ const Header = () => {
 
   return (
     <>
-   
     { isLocationChange&& <LocationSideBar isLocationChange={isLocationChange} setIsLocationChange={setIsLocationChange}/>} 
     <div className="flex justify-between items-center  bg-slate-100  mx-4 p-2 shadow-lg rounded-md ">
       <Link to="/">

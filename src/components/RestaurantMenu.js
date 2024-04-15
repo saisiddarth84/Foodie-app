@@ -61,7 +61,7 @@ const RestaurantMenu = () => {
 
   return (
     <>
-      <div className="my-10 mx-auto w-2/3  shadow-xl p-6 rounded ">
+      <div className="my-10 mx-auto w-2/3  shadow-xl p-6 rounded">
         <div className="menu">
           <div className="flex justify-between items-center pb-4 border-dashed border-b-2">
             <div>
@@ -75,6 +75,7 @@ const RestaurantMenu = () => {
                 <div>{costForTwoMessage}</div>
               </div>
             </div>
+            
             <div>
               <div className="flex justify-center items-center gap-1">
                 <img className="w-4" src={starLogo} />
